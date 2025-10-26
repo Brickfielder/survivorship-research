@@ -857,6 +857,8 @@ const state = {
   meta: {},
   mapController: { filter: () => {} },
   people: [],
+  rawPeople: [],
+  localizations: {},
   language: DEFAULT_LANGUAGE,
 };
 
@@ -1041,11 +1043,20 @@ const initDirectory = (people) => {
 };
 
 const initMap = (people) => {
-  const mapElement = document.getElementById("map-canvas");
+  let mapElement = document.getElementById("map-canvas");
   if (!mapElement || typeof L === "undefined") {
     return {
       filter: () => {},
     };
+  }
+
+  if (mapElement._leaflet_id) {
+    const parent = mapElement.parentNode;
+    if (parent) {
+      const clone = mapElement.cloneNode(false);
+      parent.replaceChild(clone, mapElement);
+      mapElement = clone;
+    }
   }
 
   const map = L.map(mapElement, {
@@ -1123,6 +1134,58 @@ const updateStatus = (visible, total, query, meta) => {
   });
 };
 
+const translateValueWithFallback = (value, lang) => {
+  if (value == null) {
+    return value;
+  }
+  if (Array.isArray(value)) {
+    return value;
+  }
+  if (typeof value === "object") {
+    const direct = value[lang];
+    if (direct !== undefined) {
+      return direct;
+    }
+    const fallback = value[DEFAULT_LANGUAGE];
+    if (fallback !== undefined) {
+      return fallback;
+    }
+    const firstDefined = Object.values(value).find((entry) => entry !== undefined);
+    return firstDefined;
+  }
+  return value;
+};
+
+const localizePerson = (person, lang) => {
+  const overrides = state.localizations?.[lang]?.[person.id] ?? {};
+  const keys = new Set([...Object.keys(person), ...Object.keys(overrides)]);
+  const localized = {};
+  keys.forEach((key) => {
+    const overrideValue = overrides[key];
+    const sourceValue = overrideValue !== undefined ? overrideValue : person[key];
+    localized[key] = translateValueWithFallback(sourceValue, lang);
+  });
+  return localized;
+};
+
+const localizePeople = (people, lang) => people.map((person) => localizePerson(person, lang));
+
+const refreshDirectoryAndMap = () => {
+  if (!state.people.length) {
+    if (cardsContainer) {
+      cardsContainer.innerHTML = "";
+    }
+    state.directoryItems = [];
+    state.mapController = initMap(state.people);
+    updateStatus(0, 0, "", state.meta);
+    return;
+  }
+
+  state.directoryItems = initDirectory(state.people);
+  state.mapController = initMap(state.people);
+  applyFilter(searchInput?.value ?? "");
+};
+
 const applyFilter = (query) => {
   const rawQuery = (query ?? "").toString();
   const q = normalise(rawQuery);
@@ -1192,26 +1255,19 @@ const applyTranslations = (lang) => {
     el.setAttribute("aria-label", translate(key));
   });
 
+  state.people = localizePeople(state.rawPeople, state.language);
   state.total = state.people.length;
-  if (state.people.length) {
-    state.directoryItems = initDirectory(state.people);
-    applyFilter(searchInput?.value ?? "");
-  } else {
-    updateStatus(0, 0, "", state.meta);
-  }
+  refreshDirectoryAndMap();
 };
 
 const initialise = async () => {
   try {
     const data = await loadData();
     const people = Array.isArray(data.people) ? data.people : [];
-    state.people = people;
-    state.total = people.length;
+Io    state.rawPeople = people;
+    state.localizations = data.localizations ?? {};
     state.meta = data.meta ?? {};
-    state.directoryItems = initDirectory(people);
-    state.mapController = initMap(people);
-    updateStatus(people.length, people.length, "", state.meta);
-    applyFilter(searchInput?.value ?? "");
+    applyTranslations(state.language);
   } catch (error) {
     console.error(error);
     if (statusEl) {
