@@ -855,8 +855,15 @@ const state = {
   total: 0,
   directoryItems: [],
   meta: {},
-  mapController: { filter: () => {} },
+  rawMeta: {},
+  mapController: {
+    filter: () => {},
+    setPeople: () => {},
+    initialized: false,
+  },
   people: [],
+  rawPeople: [],
+  locales: {},
   language: DEFAULT_LANGUAGE,
 };
 
@@ -915,6 +922,42 @@ const formatDate = (value, locale = state.language ?? DEFAULT_LANGUAGE) => {
       day: "numeric",
     });
   }
+};
+
+const cloneValue = (value) => {
+  if (Array.isArray(value)) {
+    return value.map((item) => cloneValue(item));
+  }
+  if (value && typeof value === "object") {
+    return { ...value };
+  }
+  return value;
+};
+
+const localisePerson = (person, lang) => {
+  const overrides = resolvePath(state.locales, `${lang}.people.${person.id}`);
+  if (!overrides || typeof overrides !== "object") {
+    return { ...person };
+  }
+  const next = { ...person };
+  Object.entries(overrides).forEach(([key, value]) => {
+    next[key] = cloneValue(value);
+  });
+  return next;
+};
+
+const getLocalisedPeople = (lang) => {
+  const base = Array.isArray(state.rawPeople) ? state.rawPeople : [];
+  return base.map((person) => localisePerson(person, lang));
+};
+
+const getLocalisedMeta = (lang) => {
+  const overrides = resolvePath(state.locales, `${lang}.meta`);
+  const base = state.rawMeta && typeof state.rawMeta === "object" ? state.rawMeta : {};
+  if (!overrides || typeof overrides !== "object") {
+    return { ...base };
+  }
+  return { ...base, ...overrides };
 };
 
 const buildKeywords = (person) =>
@@ -1045,6 +1088,8 @@ const initMap = (people) => {
   if (!mapElement || typeof L === "undefined") {
     return {
       filter: () => {},
+      setPeople: () => {},
+      initialized: false,
     };
   }
 
@@ -1057,29 +1102,40 @@ const initMap = (people) => {
     maxZoom: 18,
   }).addTo(map);
 
-  const entriesWithCoords = people
-    .filter((person) => Number.isFinite(person.lat) && Number.isFinite(person.lng))
-    .map((person) => ({
-      person,
-      marker: L.marker([person.lat, person.lng], { title: person.name }).bindPopup(createPopupContent(person)),
-      keywords: buildKeywords(person),
-    }));
-
   const layerGroup = L.layerGroup().addTo(map);
+
+  const buildEntries = (list) =>
+    list
+      .filter((person) => Number.isFinite(person.lat) && Number.isFinite(person.lng))
+      .map((person) => ({
+        person,
+        marker: L.marker([person.lat, person.lng], { title: person.name }).bindPopup(createPopupContent(person)),
+        keywords: buildKeywords(person),
+      }));
+
+  let entriesWithCoords = buildEntries(people);
 
   const renderMarkers = (markers) => {
     layerGroup.clearLayers();
     markers.forEach((item) => layerGroup.addLayer(item.marker));
   };
 
-  renderMarkers(entriesWithCoords);
+  const resetView = (markers) => {
+    if (!markers.length) {
+      map.setView([30, 0], 2);
+      return;
+    }
+    if (markers.length === entriesWithCoords.length && entriesWithCoords.length) {
+      const bounds = L.latLngBounds(entriesWithCoords.map((item) => item.marker.getLatLng()));
+      map.fitBounds(bounds.pad(0.2), { maxZoom: 6 });
+    } else {
+      const bounds = L.latLngBounds(markers.map((item) => item.marker.getLatLng()));
+      map.fitBounds(bounds.pad(0.3), { maxZoom: 8 });
+    }
+  };
 
-  if (entriesWithCoords.length) {
-    const bounds = L.latLngBounds(entriesWithCoords.map((item) => item.marker.getLatLng()));
-    map.fitBounds(bounds.pad(0.2), { maxZoom: 6 });
-  } else {
-    map.setView([30, 0], 2);
-  }
+  renderMarkers(entriesWithCoords);
+  resetView(entriesWithCoords);
 
   return {
     filter: (query) => {
@@ -1088,16 +1144,14 @@ const initMap = (people) => {
         ? entriesWithCoords.filter((item) => item.keywords.includes(q))
         : entriesWithCoords;
       renderMarkers(matches);
-      if (!matches.length) {
-        map.setView([30, 0], 2);
-      } else if (matches.length === entriesWithCoords.length && entriesWithCoords.length) {
-        const bounds = L.latLngBounds(entriesWithCoords.map((item) => item.marker.getLatLng()));
-        map.fitBounds(bounds.pad(0.2), { maxZoom: 6 });
-      } else if (matches.length) {
-        const bounds = L.latLngBounds(matches.map((item) => item.marker.getLatLng()));
-        map.fitBounds(bounds.pad(0.3), { maxZoom: 8 });
-      }
+      resetView(matches);
     },
+    setPeople: (nextPeople) => {
+      entriesWithCoords = buildEntries(nextPeople);
+      renderMarkers(entriesWithCoords);
+      resetView(entriesWithCoords);
+    },
+    initialized: true,
   };
 };
 
@@ -1192,26 +1246,37 @@ const applyTranslations = (lang) => {
     el.setAttribute("aria-label", translate(key));
   });
 
+  state.meta = getLocalisedMeta(nextLang);
+  state.people = getLocalisedPeople(nextLang);
   state.total = state.people.length;
+
+  const currentQuery = searchInput?.value ?? "";
+
+  state.directoryItems = initDirectory(state.people);
+
+  if (!state.mapController.initialized) {
+    state.mapController = initMap(state.people);
+  } else if (typeof state.mapController.setPeople === "function") {
+    state.mapController.setPeople(state.people);
+  }
+
   if (state.people.length) {
-    state.directoryItems = initDirectory(state.people);
-    applyFilter(searchInput?.value ?? "");
+    applyFilter(currentQuery);
   } else {
-    updateStatus(0, 0, "", state.meta);
+    if (typeof state.mapController.setPeople === "function") {
+      state.mapController.setPeople([]);
+    }
+    updateStatus(0, 0, currentQuery.trim(), state.meta);
   }
 };
 
 const initialise = async () => {
   try {
     const data = await loadData();
-    const people = Array.isArray(data.people) ? data.people : [];
-    state.people = people;
-    state.total = people.length;
-    state.meta = data.meta ?? {};
-    state.directoryItems = initDirectory(people);
-    state.mapController = initMap(people);
-    updateStatus(people.length, people.length, "", state.meta);
-    applyFilter(searchInput?.value ?? "");
+    state.rawPeople = Array.isArray(data.people) ? data.people : [];
+    state.rawMeta = data.meta && typeof data.meta === "object" ? data.meta : {};
+    state.locales = data.locales && typeof data.locales === "object" ? data.locales : {};
+    applyTranslations(state.language);
   } catch (error) {
     console.error(error);
     if (statusEl) {
