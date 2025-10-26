@@ -865,6 +865,10 @@ const state = {
   rawPeople: [],
   locales: {},
   language: DEFAULT_LANGUAGE,
+  dataReady: false,
+  pendingLanguage: null,
+  peopleCache: {},
+  metaCache: {},
 };
 
 const normalise = (value) => (value ?? "").toString().toLowerCase();
@@ -934,30 +938,45 @@ const cloneValue = (value) => {
   return value;
 };
 
-const localisePerson = (person, lang) => {
-  const overrides = resolvePath(state.locales, `${lang}.people.${person.id}`);
-  if (!overrides || typeof overrides !== "object") {
-    return { ...person };
-  }
-  const next = { ...person };
-  Object.entries(overrides).forEach(([key, value]) => {
+const clonePerson = (person) => {
+  const next = {};
+  Object.entries(person).forEach(([key, value]) => {
     next[key] = cloneValue(value);
   });
   return next;
 };
 
 const getLocalisedPeople = (lang) => {
-  const base = Array.isArray(state.rawPeople) ? state.rawPeople : [];
-  return base.map((person) => localisePerson(person, lang));
+  const safeLang = SUPPORTED_LANGUAGES.includes(lang) ? lang : DEFAULT_LANGUAGE;
+  if (!state.peopleCache[safeLang]) {
+    const base = Array.isArray(state.rawPeople) ? state.rawPeople : [];
+    const overridesRoot = resolvePath(state.locales, `${safeLang}.people`);
+    const overridesById = overridesRoot && typeof overridesRoot === "object" ? overridesRoot : {};
+
+    state.peopleCache[safeLang] = base.map((person) => {
+      const baseClone = clonePerson(person);
+      const overrides = overridesById[person.id];
+      if (!overrides || typeof overrides !== "object") {
+        return baseClone;
+      }
+      Object.entries(overrides).forEach(([key, value]) => {
+        baseClone[key] = cloneValue(value);
+      });
+      return baseClone;
+    });
+  }
+  return state.peopleCache[safeLang].map((person) => clonePerson(person));
 };
 
 const getLocalisedMeta = (lang) => {
-  const overrides = resolvePath(state.locales, `${lang}.meta`);
-  const base = state.rawMeta && typeof state.rawMeta === "object" ? state.rawMeta : {};
-  if (!overrides || typeof overrides !== "object") {
-    return { ...base };
+  const safeLang = SUPPORTED_LANGUAGES.includes(lang) ? lang : DEFAULT_LANGUAGE;
+  if (!state.metaCache[safeLang]) {
+    const overrides = resolvePath(state.locales, `${safeLang}.meta`);
+    const base = state.rawMeta && typeof state.rawMeta === "object" ? state.rawMeta : {};
+    const merged = overrides && typeof overrides === "object" ? { ...base, ...overrides } : { ...base };
+    state.metaCache[safeLang] = merged;
   }
-  return { ...base, ...overrides };
+  return { ...state.metaCache[safeLang] };
 };
 
 const buildKeywords = (person) =>
@@ -1104,53 +1123,6 @@ const initMap = (people) => {
 
   const layerGroup = L.layerGroup().addTo(map);
 
-  const buildEntries = (list) => {
-    const validPeople = list.filter((person) => Number.isFinite(person.lat) && Number.isFinite(person.lng));
-    if (!validPeople.length) {
-      return [];
-    }
-
-    const groups = new Map();
-    validPeople.forEach((person) => {
-      const key = `${person.lat.toFixed(6)}:${person.lng.toFixed(6)}`;
-      const bucket = groups.get(key);
-      if (bucket) {
-        bucket.push(person);
-      } else {
-        groups.set(key, [person]);
-      }
-    });
-
-    const createEntry = (person, lat, lng) => ({
-      person,
-      marker: L.marker([lat, lng], { title: person.name }).bindPopup(createPopupContent(person)),
-      keywords: buildKeywords(person),
-    });
-
-    const OFFSET_RADIUS_DEG = 0.012; // ≈1.3km north/south
-
-    const entries = [];
-    groups.forEach((peopleAtPoint) => {
-      if (peopleAtPoint.length === 1) {
-        const [person] = peopleAtPoint;
-        entries.push(createEntry(person, person.lat, person.lng));
-        return;
-      }
-
-      peopleAtPoint.forEach((person, index) => {
-        const angle = (2 * Math.PI * index) / peopleAtPoint.length;
-        const latitudeAdjustment = OFFSET_RADIUS_DEG * Math.cos(angle);
-        const longitudeBase = Math.max(Math.cos((person.lat * Math.PI) / 180), 0.4);
-        const longitudeAdjustment = (OFFSET_RADIUS_DEG * Math.sin(angle)) / longitudeBase;
-        entries.push(createEntry(person, person.lat + latitudeAdjustment, person.lng + longitudeAdjustment));
-      });
-    });
-
-    return entries;
-  };
-
-  let entriesWithCoords = buildEntries(people);
-
   const buildEntries = (list) =>
     list
       .filter((person) => Number.isFinite(person.lat) && Number.isFinite(person.lng))
@@ -1245,28 +1217,20 @@ const loadData = async () => {
   return response.json();
 };
 
-const applyTranslations = (lang) => {
-  const nextLang = SUPPORTED_LANGUAGES.includes(lang) ? lang : DEFAULT_LANGUAGE;
-  state.language = nextLang;
-  document.documentElement.lang = nextLang;
-  if (languageSelect && languageSelect.value !== nextLang) {
-    languageSelect.value = nextLang;
-  }
-
-  document.title = translate("title");
+const applyStaticTranslations = (lang) => {
+  document.title = translate("title", {}, lang);
 
   document.querySelectorAll("[data-i18n]").forEach((el) => {
-    if (el.dataset.i18n === "footer.notice") {
+    const key = el.dataset.i18n;
+    if (!key || key === "footer.notice") {
       return;
     }
-    el.textContent = translate(el.dataset.i18n);
+    el.textContent = translate(key, {}, lang);
   });
 
   const footerNotice = document.querySelector('[data-i18n="footer.notice"]');
   if (footerNotice) {
-    footerNotice.textContent = translate("footer.notice", {
-      year: new Date().getFullYear(),
-    });
+    footerNotice.textContent = translate("footer.notice", { year: new Date().getFullYear() }, lang);
   }
 
   document.querySelectorAll("[data-i18n-html]").forEach((el) => {
@@ -1275,37 +1239,44 @@ const applyTranslations = (lang) => {
     if (key === "footer.data") {
       const email = el.dataset.email ?? "info@example.org";
       const emailLink = `<a href="mailto:${email}" style="color:#fff; text-underline-offset:2px;">${email}</a>`;
-      el.innerHTML = translate(key, { email, emailLink });
+      el.innerHTML = translate(key, { email, emailLink }, lang);
     } else {
-      el.innerHTML = translate(key);
+      el.innerHTML = translate(key, {}, lang);
     }
   });
 
   document.querySelectorAll("[data-i18n-placeholder]").forEach((el) => {
     const key = el.dataset.i18nPlaceholder;
     if (!key) return;
-    el.setAttribute("placeholder", translate(key));
+    el.setAttribute("placeholder", translate(key, {}, lang));
   });
 
   document.querySelectorAll("[data-i18n-aria-label]").forEach((el) => {
     const key = el.dataset.i18nAriaLabel;
     if (!key) return;
-    el.setAttribute("aria-label", translate(key));
+    el.setAttribute("aria-label", translate(key, {}, lang));
   });
+};
 
-  const hasRawData = Array.isArray(state.rawPeople) && state.rawPeople.length > 0;
+const applyTranslations = (lang) => {
+  const nextLang = SUPPORTED_LANGUAGES.includes(lang) ? lang : DEFAULT_LANGUAGE;
+  state.language = nextLang;
+  document.documentElement.lang = nextLang;
+  if (languageSelect && languageSelect.value !== nextLang) {
+    languageSelect.value = nextLang;
+  }
 
-  state.meta = hasRawData ? getLocalisedMeta(nextLang) : {};
-  state.people = hasRawData ? getLocalisedPeople(nextLang) : [];
-  state.total = state.people.length;
+  applyStaticTranslations(nextLang);
 
-  if (!hasRawData) {
-    state.directoryItems = [];
-    if (statusEl) {
-      statusEl.textContent = "";
-    }
+  if (!state.dataReady) {
+    state.pendingLanguage = nextLang;
     return;
   }
+
+  state.pendingLanguage = null;
+  state.meta = getLocalisedMeta(nextLang);
+  state.people = getLocalisedPeople(nextLang);
+  state.total = state.people.length;
 
   const currentQuery = searchInput?.value ?? "";
 
@@ -1333,7 +1304,12 @@ const initialise = async () => {
     state.rawPeople = Array.isArray(data.people) ? data.people : [];
     state.rawMeta = data.meta && typeof data.meta === "object" ? data.meta : {};
     state.locales = data.locales && typeof data.locales === "object" ? data.locales : {};
-    applyTranslations(state.language);
+    state.peopleCache = {};
+    state.metaCache = {};
+    state.dataReady = true;
+    const targetLanguage = state.pendingLanguage ?? state.language;
+    state.pendingLanguage = null;
+    applyTranslations(targetLanguage);
   } catch (error) {
     console.error(error);
     state.dataReady = false;
