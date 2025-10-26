@@ -1264,7 +1264,7 @@ const initialise = async () => {
   try {
     const data = await loadData();
     const people = Array.isArray(data.people) ? data.people : [];
-    state.rawPeople = people;
+Io    state.rawPeople = people;
     state.localizations = data.localizations ?? {};
     state.meta = data.meta ?? {};
     applyTranslations(state.language);
