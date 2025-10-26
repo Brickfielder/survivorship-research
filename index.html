@@ -15,15 +15,26 @@
 <body>
   <header>
     <nav class="nav" aria-label="Primary">
-      <div class="brand">
-        <div class="brand-badge" aria-hidden>OH</div>
-        <div>Survivorship & Co‑Survivorship Research</div>
-      </div>
-      <div>
-        <a href="#map">Map</a>
-        <a href="#directory">Researchers</a>
-        <a href="#qa">Q&A</a>
-        <a href="#submit" class="cta">Add yourself</a>
+      <div class="brand" data-i18n="brand.name">Survivorship & Co‑Survivorship Research</div>
+      <div class="nav-controls">
+        <div class="nav-links">
+          <a href="#map" data-i18n="nav.map">Map</a>
+          <a href="#directory" data-i18n="nav.directory">Researchers</a>
+          <a href="#qa" data-i18n="nav.qa">Q&amp;A</a>
+          <a href="#submit" class="cta" data-i18n="nav.submit">Add yourself</a>
+        </div>
+        <label class="language-picker">
+          <span data-i18n="language.label">Language</span>
+          <select id="language-select" data-i18n-aria-label="language.selectorLabel">
+            <option value="en">English</option>
+            <option value="fr">Français</option>
+            <option value="pl">Polski</option>
+            <option value="el">Ελληνικά</option>
+            <option value="fi">Suomi</option>
+            <option value="sv">Svenska</option>
+            <option value="it">Italiano</option>
+          </select>
+        </label>
       </div>
     </nav>
   </header>
@@ -31,15 +42,12 @@
   <section class="hero">
     <div class="hero-wrap">
       <div>
-        <h1>Mapping the people improving life after cardiac arrest</h1>
-        <p>Discover researchers, clinicians, survivors and co‑survivors. Find collaborators, share ideas, and accelerate survivorship science and services.</p>
+        <h1 data-i18n="hero.heading">Mapping the people improving life after cardiac arrest</h1>
+        <p data-i18n="hero.description">Discover researchers, clinicians, survivors and co‑survivors. Find collaborators, share ideas, and accelerate survivorship science and services.</p>
         <div class="buttons">
-          <a class="btn-dark" href="#map">View the map</a>
-          <a class="btn-ghost" href="#submit">Add your entry</a>
+          <a class="btn-dark" href="#map" data-i18n="hero.viewMap">View the map</a>
+          <a class="btn-ghost" href="#submit" data-i18n="hero.addEntry">Add your entry</a>
         </div>
-      </div>
-      <div class="mock" aria-label="map preview placeholder">
-        Interactive map preview — embed Leaflet/MapLibre/Google Maps here
       </div>
     </div>
   </section>
@@ -47,15 +55,15 @@
   <main>
     <div>
       <section id="map" class="section">
-        <h3>Global map</h3>
-        <p class="muted">Explore who is working on survivorship and co‑survivorship around the world. Filter by topic, population and methods.</p>
+        <h3 data-i18n="mapSection.title">Global map</h3>
+        <p class="muted" data-i18n="mapSection.description">Explore who is working on survivorship and co‑survivorship around the world. Filter by topic, population and methods.</p>
         <div class="filters" aria-label="map filters">
-          <span class="chip">Cognition</span>
-          <span class="chip">Psychological support</span>
-          <span class="chip">Quality of life</span>
-          <span class="chip">Return to work</span>
-          <span class="chip">Family & co‑survivors</span>
-          <span class="chip">Registry analyses</span>
+          <span class="chip" data-i18n="filters.cognition">Cognition</span>
+          <span class="chip" data-i18n="filters.psychologicalSupport">Psychological support</span>
+          <span class="chip" data-i18n="filters.qualityOfLife">Quality of life</span>
+          <span class="chip" data-i18n="filters.returnToWork">Return to work</span>
+          <span class="chip" data-i18n="filters.family">Family &amp; co‑survivors</span>
+          <span class="chip" data-i18n="filters.registryAnalyses">Registry analyses</span>
         </div>
         <div
           id="map-canvas"
@@ -66,10 +74,23 @@
       </section>
 
       <section id="directory" class="section">
-        <h3>Researchers & collaborators</h3>
+        <h3 data-i18n="directory.title">Researchers & collaborators</h3>
         <div class="toolbar">
-          <input id="search" class="search" type="search" placeholder="Search by name, org, tag, country…" aria-label="Search directory" />
-          <a class="cta" href="#submit" style="padding:10px 12px; border-radius:10px; text-decoration:none;">Add yourself</a>
+          <input
+            id="search"
+            class="search"
+            type="search"
+            placeholder="Search by name, org, tag, country…"
+            aria-label="Search directory"
+            data-i18n-placeholder="directory.searchPlaceholder"
+            data-i18n-aria-label="directory.searchLabel"
+          />
+          <a
+            class="cta"
+            href="#submit"
+            style="padding:10px 12px; border-radius:10px; text-decoration:none;"
+            data-i18n="directory.addYourself"
+          >Add yourself</a>
         </div>
         <div class="cards" id="cards" aria-live="polite"></div>
         <div class="directory-status" id="directory-status" role="status" aria-live="polite"></div>
@@ -77,75 +98,80 @@
 
       <section class="section">
         <div class="ribbon">
-          <strong>Are you active in survivorship research?</strong>
-          <div class="muted">If you don't find yourself on the map, add your details below. See the Q&A for scope and sources.</div>
+          <strong data-i18n="ribbon.title">Are you active in survivorship research?</strong>
+          <div class="muted" data-i18n="ribbon.description">If you don't find yourself on the map, add your details below. See the Q&amp;A for scope and sources.</div>
         </div>
       </section>
 
       <section id="qa" class="section">
-        <h3 style="color:#c62828; margin-bottom:6px;">Questions and answers on the map of survivorship</h3>
-        <p class="muted" style="margin-bottom:10px; font-style:italic;">This list does not claim to be complete, nor can the accuracy or topicality of the information be guaranteed by the editors of this site.</p>
+        <h3 style="color:#c62828; margin-bottom:6px;" data-i18n="qa.title">Questions and answers on the map of survivorship</h3>
+        <p class="muted" style="margin-bottom:10px; font-style:italic;" data-i18n="qa.intro">This list does not claim to be complete, nor can the accuracy or topicality of the information be guaranteed by the editors of this site.</p>
         <div class="qa-list" style="border:1px solid #e5e7eb; border-radius:10px; overflow:hidden;">
           <details>
-            <summary><span class="plus" aria-hidden>+</span> Why was the map of survivorship created?</summary>
-            <div class="answer">To connect survivors, co‑survivors, clinicians and researchers working on life after OHCA. Visibility reduces duplication, speeds collaboration, and supports guideline and service development.</div>
+            <summary><span class="plus" aria-hidden>+</span> <span data-i18n="qa.items.0.question">Why was the map of survivorship created?</span></summary>
+            <div class="answer" data-i18n="qa.items.0.answer">To connect survivors, co‑survivors, clinicians and researchers working on life after OHCA. Visibility reduces duplication, speeds collaboration, and supports guideline and service development.</div>
           </details>
           <details>
-            <summary><span class="plus" aria-hidden>+</span> What does the map show?</summary>
-            <div class="answer">Pins for people and groups active in survivorship: research labs, clinical services, survivor‑led organisations. Each pin links to a short profile: name, role, institution, country/region, and a 1–2 sentence summary.</div>
+            <summary><span class="plus" aria-hidden>+</span> <span data-i18n="qa.items.1.question">What does the map show?</span></summary>
+            <div class="answer" data-i18n="qa.items.1.answer">Pins for people and groups active in survivorship: research labs, clinical services, survivor‑led organisations. Each pin links to a short profile: name, role, institution, country/region, and a 1–2 sentence summary.</div>
           </details>
           <details>
-            <summary><span class="plus" aria-hidden>+</span> What is the content and sources on which the map is based?</summary>
-            <div class="answer">Primarily self‑submitted entries reviewed by editors, plus publicly available info from institutional pages, publications and conference programmes. Each entry indicates the source and last update.</div>
+            <summary><span class="plus" aria-hidden>+</span> <span data-i18n="qa.items.2.question">What is the content and sources on which the map is based?</span></summary>
+            <div class="answer" data-i18n="qa.items.2.answer">Primarily self‑submitted entries reviewed by editors, plus publicly available info from institutional pages, publications and conference programmes. Each entry indicates the source and last update.</div>
           </details>
           <details>
-            <summary><span class="plus" aria-hidden>+</span> How can I make an entry on the map myself?</summary>
-            <div class="answer">Use the form below or submit a pull request against <code>data/resuscitation-network-people.json</code>. We check scope and GDPR consent, then publish and email confirmation. You can request edits or removal anytime.</div>
+            <summary><span class="plus" aria-hidden>+</span> <span data-i18n="qa.items.3.question">How can I make an entry on the map myself?</span></summary>
+            <div class="answer" data-i18n="qa.items.3.answer">Use the form below or submit a pull request against <code>data/resuscitation-network-people.json</code>. We check scope and GDPR consent, then publish and email confirmation. You can request edits or removal anytime.</div>
           </details>
         </div>
       </section>
 
       <section id="submit" class="section">
-        <h3>Add yourself to the map</h3>
-        <p class="muted">This demo form doesn’t submit anywhere. Wire it to your backend, Airtable or Netlify Forms.</p>
-        <form class="form" onsubmit="event.preventDefault(); alert('Submitted (demo).');">
+        <h3 data-i18n="form.title">Add yourself to the map</h3>
+        <p class="muted" data-i18n="form.intro">This demo form doesn’t submit anywhere. Wire it to your backend, Airtable or Netlify Forms.</p>
+        <form class="form">
           <div class="group">
-            <label for="name">Full name</label>
-            <input id="name" placeholder="e.g., Jane Doe" required />
+            <label for="name" data-i18n="form.name">Full name</label>
+            <input id="name" placeholder="e.g., Jane Doe" required data-i18n-placeholder="form.namePlaceholder" />
           </div>
           <div class="group">
-            <label for="role">Role</label>
-            <input id="role" placeholder="Clinical Psychologist / Survivor / Researcher" required />
+            <label for="role" data-i18n="form.role">Role</label>
+            <input id="role" placeholder="Clinical Psychologist / Survivor / Researcher" required data-i18n-placeholder="form.rolePlaceholder" />
           </div>
           <div class="group">
-            <label for="org">Institution / Group</label>
-            <input id="org" placeholder="e.g., King's College London" required />
+            <label for="org" data-i18n="form.org">Institution / Group</label>
+            <input id="org" placeholder="e.g., King's College London" required data-i18n-placeholder="form.orgPlaceholder" />
           </div>
           <div class="group">
-            <label for="country">Country / Region</label>
-            <input id="country" placeholder="e.g., UK" required />
+            <label for="country" data-i18n="form.country">Country / Region</label>
+            <input id="country" placeholder="e.g., UK" required data-i18n-placeholder="form.countryPlaceholder" />
           </div>
           <div class="group" style="grid-column: 1 / -1;">
-            <label for="summary">1–2 sentence summary</label>
-            <textarea id="summary" placeholder="I study long‑term cognitive outcomes and family‑centred aftercare…" required></textarea>
+            <label for="summary" data-i18n="form.summary">1–2 sentence summary</label>
+            <textarea
+              id="summary"
+              placeholder="I study long‑term cognitive outcomes and family‑centred aftercare…"
+              required
+              data-i18n-placeholder="form.summaryPlaceholder"
+            ></textarea>
           </div>
           <div class="group">
-            <label for="email">Email (kept private; used for confirmation)</label>
-            <input id="email" type="email" placeholder="you@example.org" required />
+            <label for="email" data-i18n="form.email">Email (kept private; used for confirmation)</label>
+            <input id="email" type="email" placeholder="you@example.org" required data-i18n-placeholder="form.emailPlaceholder" />
           </div>
           <div class="group">
-            <label for="links">Links (optional)</label>
-            <input id="links" placeholder="ORCID, Lab page, LinkedIn…" />
+            <label for="links" data-i18n="form.links">Links (optional)</label>
+            <input id="links" placeholder="ORCID, Lab page, LinkedIn…" data-i18n-placeholder="form.linksPlaceholder" />
           </div>
           <div class="group" style="grid-column: 1 / -1;">
             <label class="consent">
               <input type="checkbox" required aria-label="Consent" />
-              <span>I consent to the publication of my entry on the map and understand I can request edits or deletion at any time.</span>
+              <span data-i18n="form.consent">I consent to the publication of my entry on the map and understand I can request edits or deletion at any time.</span>
             </label>
           </div>
           <div class="group" style="grid-column: 1 / -1; display:flex; gap:10px;">
-            <button class="submit" type="submit">Submit (demo)</button>
-            <a class="cta" href="#" style="text-decoration:none; padding:10px 16px; border-radius:10px;">Update an existing entry</a>
+            <button class="submit" type="submit" data-i18n="form.submit">Submit (demo)</button>
+            <a class="cta" href="#" style="text-decoration:none; padding:10px 16px; border-radius:10px;" data-i18n="form.update">Update an existing entry</a>
           </div>
         </form>
       </section>
@@ -154,8 +180,11 @@
 
   <footer>
     <div class="foot">
-      <div>© <span id="year"></span> Survivorship & Co‑Survivorship Research Network — Content CC BY 4.0 unless noted.</div>
-      <div style="opacity:.9">Data notice: entries are published with consent; removal/edit requests honoured. Contact: <a href="mailto:info@example.org" style="color:#fff; text-underline-offset:2px;">info@example.org</a></div>
+      <div data-i18n="footer.notice">© 2024 Survivorship & Co‑Survivorship Research Network — Content CC BY 4.0 unless noted.</div>
+      <div style="opacity:.9" data-i18n-html="footer.data" data-email="info@example.org">
+        Data notice: entries are published with consent; removal/edit requests honoured. Contact:
+        <a href="mailto:info@example.org" style="color:#fff; text-underline-offset:2px;">info@example.org</a>
+      </div>
     </div>
   </footer>
 
