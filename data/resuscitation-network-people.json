@@ -496,5 +496,955 @@
       "id": "alexander-presciutti",
       "updated_at": "2025-10-26"
     }
-  ]
+  ],
+  "localizations": {
+    "fr": {
+      "stefan-jutterdal": {
+        "role": "Physiothérapeute; défenseur des patients/survivants",
+        "interests": "Rééducation centrée sur la personne; plaidoyer pour les patients après un événement cardiaque",
+        "country": "Suède",
+        "confidence": "Moyenne"
+      },
+      "johan-israelsson-rn-phd": {
+        "role": "Infirmier de soins intensifs et chercheur",
+        "interests": "Suivi post-ACR; qualité de vie; résultats psychologiques",
+        "country": "Suède",
+        "confidence": "Élevée"
+      },
+      "aymeric-lejeune": {
+        "role": "Responsable de réseau/programme",
+        "interests": "Réseaux de formation; cours; opérations de l'ERC",
+        "country": "Belgique",
+        "confidence": "Élevée"
+      },
+      "federico-semeraro-md": {
+        "role": "Président; anesthésie et soins intensifs / urgence préhospitalière",
+        "interests": "Formation à la réanimation; directives; RCP par les témoins",
+        "country": "Italie",
+        "confidence": "Élevée"
+      },
+      "katie-dainty-phd": {
+        "role": "Titulaire de la chaire de recherche sur les résultats centrés sur les patients",
+        "interests": "Expérience des survivants et des familles; méthodes qualitatives et mixtes",
+        "country": "Canada",
+        "confidence": "Élevée"
+      },
+      "freddy-lippert-md": {
+        "role": "Leader des EMS; ancien PDG, EMS Copenhague",
+        "interests": "Systèmes de soins de l'ACR; régulation; activation des témoins",
+        "country": "Danemark",
+        "confidence": "Élevée"
+      },
+      "koenraad-koen-monsieurs-md-phd": {
+        "role": "Chef du service de médecine d'urgence; professeur",
+        "interests": "Directives de l'ERC; ALS; voies aériennes; formation",
+        "country": "Belgique",
+        "confidence": "Élevée"
+      },
+      "paul-swindell": {
+        "role": "Fondateur/président; défenseur des survivants",
+        "interests": "Soutien par les pairs; expérience vécue; sensibilisation du public",
+        "country": "Royaume-Uni",
+        "confidence": "Élevée (personne) / Moyenne (localisation)"
+      },
+      "dave-cleland": {
+        "role": "Survivant d'ACR; conteur",
+        "interests": "Expérience vécue; défense des survivants",
+        "country": "Royaume-Uni",
+        "confidence": "Élevée (personne) / Moyenne (localisation)"
+      },
+      "esther-kuku": {
+        "role": "Directrice des communications et de l'engagement",
+        "interests": "Engagement du public; partenariats; communication",
+        "country": "Royaume-Uni",
+        "confidence": "Élevée"
+      },
+      "victoria-wragg-rn": {
+        "role": "Responsable clinique",
+        "interests": "Parcours des survivants; normes de qualité; suivi post-soins",
+        "country": "Royaume-Uni",
+        "confidence": "Élevée"
+      },
+      "lorenzo-gamberini-md": {
+        "role": "Anesthésie et soins intensifs; urgence préhospitalière",
+        "interests": "ACR; systèmes préhospitaliers; soins avancés de réanimation",
+        "country": "Italie",
+        "confidence": "Élevée"
+      },
+      "bo-gregers-winkel-md-dmsc": {
+        "role": "Cardiologue consultant; directeur de la recherche",
+        "interests": "Mort subite d'origine cardiaque; résultats après ACR",
+        "country": "Danemark",
+        "confidence": "Élevée"
+      },
+      "guglielmo-imbriaco": {
+        "role": "Membre du comité scientifique",
+        "interests": "EMS; formation; science de la réanimation",
+        "country": "Italie",
+        "confidence": "Élevée (personne) / Moyenne (localisation)"
+      },
+      "katarina-heimburg": {
+        "role": "Physiothérapeute et chercheuse",
+        "interests": "Rééducation après ACR; résultats centrés sur les patients",
+        "country": "Suède",
+        "confidence": "Élevée"
+      },
+      "nicole-marie-zerafa-likely": {
+        "role": "Formatrice; interne en médecine générale; contributrice MRC",
+        "interests": "Formation à la réanimation; formation communautaire",
+        "country": "Malte",
+        "confidence": "Moyenne"
+      },
+      "kirstie-l-haywood-phd": {
+        "role": "Professeure des résultats de santé",
+        "interests": "PROMs; qualité de vie; survie",
+        "country": "Royaume-Uni",
+        "confidence": "Élevée"
+      },
+      "annette-waldemar": {
+        "role": "Infirmière spécialiste; chercheuse",
+        "interests": "Réanimation en présence des familles; besoins des survivants",
+        "country": "Suède",
+        "confidence": "Élevée"
+      },
+      "mette-kirstine-wagner": {
+        "role": "Cardiologie; survie et santé mentale",
+        "interests": "Retour au travail; santé mentale après un arrêt cardiaque",
+        "country": "Danemark",
+        "confidence": "Élevée"
+      },
+      "piritta-set-l": {
+        "role": "Médecin-chef adjointe (EMS)",
+        "interests": "EMS dotés de médecins; systèmes de prise en charge",
+        "country": "Finlande",
+        "confidence": "Élevée"
+      },
+      "marta-dembkowska-przyby-md": {
+        "role": "Anesthésie et soins intensifs; comités de l'ERC",
+        "interests": "Anesthésie; formation à la réanimation",
+        "country": "Pologne",
+        "confidence": "Élevée (personne) / Moyenne (lien e-mail)"
+      },
+      "tomasz-lonc-md": {
+        "role": "Anesthésie et soins intensifs",
+        "interests": "Anesthésie régionale; résultats en soins intensifs",
+        "country": "Pologne",
+        "confidence": "Moyenne à élevée"
+      },
+      "vicky-v-l-joshi-phd": {
+        "role": "Maîtresse de conférences en physiothérapie",
+        "interests": "Survie après ACR; rééducation",
+        "country": "Royaume-Uni",
+        "confidence": "Élevée"
+      },
+      "cyprus-resuscitation-council-kysan": {
+        "role": "Conseil national de réanimation (organisation)",
+        "interests": "Formation, mise en œuvre des directives, engagement du public à Chypre",
+        "country": "Chypre",
+        "confidence": "Élevée"
+      },
+      "marco-mion-cpsychol": {
+        "role": "Psychologue clinicien et chercheur",
+        "interests": "Survie après ACR; neurorééducation; systèmes de retour d'information; soutien numérique (V-CARE)",
+        "country": "Royaume-Uni",
+        "confidence": "Élevée"
+      },
+      "alexander-presciutti": {
+        "role": "Chercheur (réanimation/sciences comportementales)",
+        "interests": "Science de la réanimation; recherche comportementale et sur les résultats (détails à confirmer)",
+        "country": "États-Unis",
+        "confidence": "Moyenne"
+      }
+    },
+    "pl": {
+      "stefan-jutterdal": {
+        "role": "Fizjoterapeuta; rzecznik pacjentów/ocalałych",
+        "interests": "Rehabilitacja zorientowana na osobę; rzecznictwo pacjentów po incydencie sercowym",
+        "country": "Szwecja",
+        "confidence": "Średnia"
+      },
+      "johan-israelsson-rn-phd": {
+        "role": "Pielęgniarz intensywnej terapii i badacz",
+        "interests": "Opieka po NZK; jakość życia; wyniki psychologiczne",
+        "country": "Szwecja",
+        "confidence": "Wysoka"
+      },
+      "aymeric-lejeune": {
+        "role": "Lider sieci/programu",
+        "interests": "Sieci edukacyjne; kursy; operacje ERC",
+        "country": "Belgia",
+        "confidence": "Wysoka"
+      },
+      "federico-semeraro-md": {
+        "role": "Prezes; anestezjologia i OIOM / ratownictwo przedszpitalne",
+        "interests": "Edukacja w zakresie resuscytacji; wytyczne; RKO przez świadków",
+        "country": "Włochy",
+        "confidence": "Wysoka"
+      },
+      "katie-dainty-phd": {
+        "role": "Profesor ds. wyników opieki skoncentrowanej na pacjencie",
+        "interests": "Doświadczenia ocalałych i rodzin; metody jakościowe i mieszane",
+        "country": "Kanada",
+        "confidence": "Wysoka"
+      },
+      "freddy-lippert-md": {
+        "role": "Lider EMS; były dyrektor generalny EMS Kopenhaga",
+        "interests": "Systemy opieki nad NZK; dyspozytornia; aktywacja świadków",
+        "country": "Dania",
+        "confidence": "Wysoka"
+      },
+      "koenraad-koen-monsieurs-md-phd": {
+        "role": "Kierownik medycyny ratunkowej; profesor",
+        "interests": "Wytyczne ERC; ALS; drogi oddechowe; edukacja",
+        "country": "Belgia",
+        "confidence": "Wysoka"
+      },
+      "paul-swindell": {
+        "role": "Założyciel/przewodniczący; rzecznik ocalałych",
+        "interests": "Wsparcie rówieśnicze; doświadczenie własne; edukacja społeczna",
+        "country": "Zjednoczone Królestwo",
+        "confidence": "Wysoka (osoba) / Średnia (lokalizacja)"
+      },
+      "dave-cleland": {
+        "role": "Ocalały z NZK; opowiadacz historii",
+        "interests": "Doświadczenie własne; rzecznictwo ocalałych",
+        "country": "Zjednoczone Królestwo",
+        "confidence": "Wysoka (osoba) / Średnia (lokalizacja)"
+      },
+      "esther-kuku": {
+        "role": "Dyrektorka ds. komunikacji i zaangażowania",
+        "interests": "Zaangażowanie społeczne; partnerstwa; komunikacja",
+        "country": "Zjednoczone Królestwo",
+        "confidence": "Wysoka"
+      },
+      "victoria-wragg-rn": {
+        "role": "Liderka kliniczna",
+        "interests": "Ścieżki ocalałych; standardy jakości; opieka po zdarzeniu",
+        "country": "Zjednoczone Królestwo",
+        "confidence": "Wysoka"
+      },
+      "lorenzo-gamberini-md": {
+        "role": "Anestezjologia i OIOM; ratownictwo przedszpitalne",
+        "interests": "NZK; systemy przedszpitalne; zaawansowane zabiegi resuscytacyjne",
+        "country": "Włochy",
+        "confidence": "Wysoka"
+      },
+      "bo-gregers-winkel-md-dmsc": {
+        "role": "Konsultant kardiolog; kierownik badań",
+        "interests": "Nagły zgon sercowy; wyniki po NZK",
+        "country": "Dania",
+        "confidence": "Wysoka"
+      },
+      "guglielmo-imbriaco": {
+        "role": "Członek komitetu naukowego",
+        "interests": "EMS; edukacja; nauka o resuscytacji",
+        "country": "Włochy",
+        "confidence": "Wysoka (osoba) / Średnia (lokalizacja)"
+      },
+      "katarina-heimburg": {
+        "role": "Fizjoterapeutka i badaczka",
+        "interests": "Rehabilitacja po NZK; wyniki zorientowane na pacjenta",
+        "country": "Szwecja",
+        "confidence": "Wysoka"
+      },
+      "nicole-marie-zerafa-likely": {
+        "role": "Instruktorka; rezydentka medycyny rodzinnej; współpracowniczka MRC",
+        "interests": "Edukacja w zakresie resuscytacji; szkolenia społeczności",
+        "country": "Malta",
+        "confidence": "Średnia"
+      },
+      "kirstie-l-haywood-phd": {
+        "role": "Profesor wyników zdrowotnych",
+        "interests": "PROM-y; jakość życia; przeżycie",
+        "country": "Zjednoczone Królestwo",
+        "confidence": "Wysoka"
+      },
+      "annette-waldemar": {
+        "role": "Pielęgniarka specjalistka; badaczka",
+        "interests": "Resuscytacja przy rodzinie; potrzeby ocalałych",
+        "country": "Szwecja",
+        "confidence": "Wysoka"
+      },
+      "mette-kirstine-wagner": {
+        "role": "Kardiologia; przeżycie i zdrowie psychiczne",
+        "interests": "Powrót do pracy; zdrowie psychiczne po zatrzymaniu krążenia",
+        "country": "Dania",
+        "confidence": "Wysoka"
+      },
+      "piritta-set-l": {
+        "role": "Zastępca lekarza naczelnego (EMS)",
+        "interests": "EMS z udziałem lekarzy; systemy opieki",
+        "country": "Finlandia",
+        "confidence": "Wysoka"
+      },
+      "marta-dembkowska-przyby-md": {
+        "role": "Anestezjologia i intensywna terapia; komitety ERC",
+        "interests": "Anestezjologia; edukacja resuscytacyjna",
+        "country": "Polska",
+        "confidence": "Wysoka (osoba) / Średnia (link e-mail)"
+      },
+      "tomasz-lonc-md": {
+        "role": "Anestezjologia i intensywna terapia",
+        "interests": "Znieczulenie regionalne; wyniki intensywnej terapii",
+        "country": "Polska",
+        "confidence": "Średnio-wysoka"
+      },
+      "vicky-v-l-joshi-phd": {
+        "role": "Wykładowczyni fizjoterapii",
+        "interests": "Przeżycie po NZK; rehabilitacja",
+        "country": "Zjednoczone Królestwo",
+        "confidence": "Wysoka"
+      },
+      "cyprus-resuscitation-council-kysan": {
+        "role": "Narodowa rada resuscytacji (organizacja)",
+        "interests": "Szkolenia, wdrażanie wytycznych, zaangażowanie społeczne na Cyprze",
+        "country": "Cypr",
+        "confidence": "Wysoka"
+      },
+      "marco-mion-cpsychol": {
+        "role": "Psycholog kliniczny i badacz",
+        "interests": "Przeżycie po NZK; neurorrehabilitacja; systemy informacji zwrotnej; wsparcie cyfrowe (V-CARE)",
+        "country": "Zjednoczone Królestwo",
+        "confidence": "Wysoka"
+      },
+      "alexander-presciutti": {
+        "role": "Badacz (resuscytacja/nauki behawioralne)",
+        "interests": "Nauka o resuscytacji; badania behawioralne i wynikowe (do potwierdzenia)",
+        "country": "Stany Zjednoczone",
+        "confidence": "Średnia"
+      }
+    },
+    "el": {
+      "stefan-jutterdal": {
+        "role": "Φυσικοθεραπευτής; υπερασπιστής ασθενών/επιζώντων",
+        "interests": "Αποκατάσταση με επίκεντρο το άτομο; υπεράσπιση ασθενών μετά από καρδιακό επεισόδιο",
+        "country": "Σουηδία",
+        "confidence": "Μέτρια"
+      },
+      "johan-israelsson-rn-phd": {
+        "role": "Νοσηλευτής ΜΕΘ και ερευνητής",
+        "interests": "Παρακολούθηση μετά από ανακοπή; ποιότητα ζωής; ψυχολογικά αποτελέσματα",
+        "country": "Σουηδία",
+        "confidence": "Υψηλή"
+      },
+      "aymeric-lejeune": {
+        "role": "Υπεύθυνος δικτύου/προγράμματος",
+        "interests": "Δίκτυα εκπαίδευσης; μαθήματα; λειτουργίες ERC",
+        "country": "Βέλγιο",
+        "confidence": "Υψηλή"
+      },
+      "federico-semeraro-md": {
+        "role": "Πρόεδρος; αναισθησία και ΜΕΘ / προνοσοκομειακή επείγουσα φροντίδα",
+        "interests": "Εκπαίδευση στην ανάνηψη; κατευθυντήριες γραμμές; ΚΑΡΠΑ από παρευρισκόμενους",
+        "country": "Ιταλία",
+        "confidence": "Υψηλή"
+      },
+      "katie-dainty-phd": {
+        "role": "Επικεφαλής έδρας έρευνας για αποτελέσματα με επίκεντρο τον ασθενή",
+        "interests": "Εμπειρία επιζώντων και οικογενειών; ποιοτικές και μικτές μέθοδοι",
+        "country": "Καναδάς",
+        "confidence": "Υψηλή"
+      },
+      "freddy-lippert-md": {
+        "role": "Ηγέτης EMS; πρώην CEO, EMS Κοπεγχάγης",
+        "interests": "Συστήματα φροντίδας για ανακοπή; κέντρο κλήσεων; ενεργοποίηση παρευρισκόμενων",
+        "country": "Δανία",
+        "confidence": "Υψηλή"
+      },
+      "koenraad-koen-monsieurs-md-phd": {
+        "role": "Επικεφαλής επείγουσας ιατρικής; καθηγητής",
+        "interests": "Κατευθυντήριες ERC; ALS; αεραγωγός; εκπαίδευση",
+        "country": "Βέλγιο",
+        "confidence": "Υψηλή"
+      },
+      "paul-swindell": {
+        "role": "Ιδρυτής/πρόεδρος; υπερασπιστής επιζώντων",
+        "interests": "Υποστήριξη από ομοτίμους; βιωμένη εμπειρία; ενημέρωση κοινού",
+        "country": "Ηνωμένο Βασίλειο",
+        "confidence": "Υψηλή (άτομο) / Μέτρια (τοποθεσία)"
+      },
+      "dave-cleland": {
+        "role": "Επιζών καρδιακής ανακοπής; αφηγητής",
+        "interests": "Βιωμένη εμπειρία; υπεράσπιση επιζώντων",
+        "country": "Ηνωμένο Βασίλειο",
+        "confidence": "Υψηλή (άτομο) / Μέτρια (τοποθεσία)"
+      },
+      "esther-kuku": {
+        "role": "Διευθύντρια επικοινωνίας και εμπλοκής",
+        "interests": "Εμπλοκή κοινού; συνεργασίες; επικοινωνία",
+        "country": "Ηνωμένο Βασίλειο",
+        "confidence": "Υψηλή"
+      },
+      "victoria-wragg-rn": {
+        "role": "Κλινική υπεύθυνη",
+        "interests": "Διαδρομές επιζώντων; πρότυπα ποιότητας; μετέπειτα φροντίδα",
+        "country": "Ηνωμένο Βασίλειο",
+        "confidence": "Υψηλή"
+      },
+      "lorenzo-gamberini-md": {
+        "role": "Αναισθησία και ΜΕΘ; προνοσοκομειακή επείγουσα φροντίδα",
+        "interests": "Ανακοπή; προνοσοκομειακά συστήματα; προχωρημένη υποστήριξη ζωής",
+        "country": "Ιταλία",
+        "confidence": "Υψηλή"
+      },
+      "bo-gregers-winkel-md-dmsc": {
+        "role": "Σύμβουλος καρδιολόγος; επικεφαλής έρευνας",
+        "interests": "Αιφνίδιος καρδιακός θάνατος; αποτελέσματα μετά από ανακοπή",
+        "country": "Δανία",
+        "confidence": "Υψηλή"
+      },
+      "guglielmo-imbriaco": {
+        "role": "Μέλος επιστημονικής επιτροπής",
+        "interests": "EMS; εκπαίδευση; επιστήμη ανάνηψης",
+        "country": "Ιταλία",
+        "confidence": "Υψηλή (άτομο) / Μέτρια (τοποθεσία)"
+      },
+      "katarina-heimburg": {
+        "role": "Φυσικοθεραπεύτρια και ερευνήτρια",
+        "interests": "Αποκατάσταση μετά από ανακοπή; αποτελέσματα με επίκεντρο τον ασθενή",
+        "country": "Σουηδία",
+        "confidence": "Υψηλή"
+      },
+      "nicole-marie-zerafa-likely": {
+        "role": "Εκπαιδεύτρια; ειδικευόμενη γενικής ιατρικής; συνεργάτιδα MRC",
+        "interests": "Εκπαίδευση ανάνηψης; εκπαίδευση κοινότητας",
+        "country": "Μάλτα",
+        "confidence": "Μέτρια"
+      },
+      "kirstie-l-haywood-phd": {
+        "role": "Καθηγήτρια αποτελεσμάτων υγείας",
+        "interests": "PROMs; ποιότητα ζωής; επιβίωση",
+        "country": "Ηνωμένο Βασίλειο",
+        "confidence": "Υψηλή"
+      },
+      "annette-waldemar": {
+        "role": "Εξειδικευμένη νοσηλεύτρια; ερευνήτρια",
+        "interests": "Ανάνηψη με την παρουσία οικογένειας; ανάγκες επιζώντων",
+        "country": "Σουηδία",
+        "confidence": "Υψηλή"
+      },
+      "mette-kirstine-wagner": {
+        "role": "Καρδιολογία; επιβίωση και ψυχική υγεία",
+        "interests": "Επιστροφή στην εργασία; ψυχική υγεία μετά από καρδιακή ανακοπή",
+        "country": "Δανία",
+        "confidence": "Υψηλή"
+      },
+      "piritta-set-l": {
+        "role": "Βοηθός αρχίατρος (EMS)",
+        "interests": "EMS με γιατρούς; συστήματα φροντίδας",
+        "country": "Φινλανδία",
+        "confidence": "Υψηλή"
+      },
+      "marta-dembkowska-przyby-md": {
+        "role": "Αναισθησία και εντατική θεραπεία; επιτροπές ERC",
+        "interests": "Αναισθησία; εκπαίδευση στην ανάνηψη",
+        "country": "Πολωνία",
+        "confidence": "Υψηλή (άτομο) / Μέτρια (σύνδεσμος email)"
+      },
+      "tomasz-lonc-md": {
+        "role": "Αναισθησία και εντατική θεραπεία",
+        "interests": "Περιφερειακή αναισθησία; αποτελέσματα εντατικής θεραπείας",
+        "country": "Πολωνία",
+        "confidence": "Μεσαία-υψηλή"
+      },
+      "vicky-v-l-joshi-phd": {
+        "role": "Λέκτορας φυσικοθεραπείας",
+        "interests": "Επιβίωση μετά από ανακοπή; αποκατάσταση",
+        "country": "Ηνωμένο Βασίλειο",
+        "confidence": "Υψηλή"
+      },
+      "cyprus-resuscitation-council-kysan": {
+        "role": "Εθνικό συμβούλιο ανάνηψης (οργάνωση)",
+        "interests": "Εκπαίδευση, εφαρμογή κατευθυντήριων, εμπλοκή κοινού στην Κύπρο",
+        "country": "Κύπρος",
+        "confidence": "Υψηλή"
+      },
+      "marco-mion-cpsychol": {
+        "role": "Κλινικός ψυχολόγος και ερευνητής",
+        "interests": "Επιβίωση μετά από ανακοπή; νευροαποκατάσταση; συστήματα ανατροφοδότησης; ψηφιακή υποστήριξη (V-CARE)",
+        "country": "Ηνωμένο Βασίλειο",
+        "confidence": "Υψηλή"
+      },
+      "alexander-presciutti": {
+        "role": "Ερευνητής (ανάνηψη/συμπεριφορικές επιστήμες)",
+        "interests": "Επιστήμη ανάνηψης; έρευνα συμπεριφοράς και αποτελεσμάτων (προς επιβεβαίωση)",
+        "country": "Ηνωμένες Πολιτείες",
+        "confidence": "Μέτρια"
+      }
+    },
+    "fi": {
+      "stefan-jutterdal": {
+        "role": "Fysioterapeutti; potilas-/selviytyjäedustaja",
+        "interests": "Henkilökeskeinen kuntoutus; potilaiden edunvalvonta sydäntapahtuman jälkeen",
+        "country": "Ruotsi",
+        "confidence": "Keskitaso"
+      },
+      "johan-israelsson-rn-phd": {
+        "role": "Tehohoitohoitaja ja tutkija",
+        "interests": "Seuranta sydänpysähdyksen jälkeen; elämänlaatu; psykologiset tulokset",
+        "country": "Ruotsi",
+        "confidence": "Korkea"
+      },
+      "aymeric-lejeune": {
+        "role": "Verkosto-/ohjelmajohtaja",
+        "interests": "Koulutusverkostot; kurssit; ERC-toiminta",
+        "country": "Belgia",
+        "confidence": "Korkea"
+      },
+      "federico-semeraro-md": {
+        "role": "Puheenjohtaja; anestesia ja tehohoito / ensihoito",
+        "interests": "Elvytyskoulutus; ohjeistukset; maallikkoelvytys",
+        "country": "Italia",
+        "confidence": "Korkea"
+      },
+      "katie-dainty-phd": {
+        "role": "Potilaskeskeisten tulosten tutkimusjohtaja",
+        "interests": "Selviytyjien ja perheiden kokemus; laadulliset ja yhdistetyt menetelmät",
+        "country": "Kanada",
+        "confidence": "Korkea"
+      },
+      "freddy-lippert-md": {
+        "role": "EMS-johtaja; entinen toimitusjohtaja, EMS Kööpenhamina",
+        "interests": "Sydänpysähdyspotilaiden hoitojärjestelmät; hälytyskeskus; ohikulkijoiden aktivointi",
+        "country": "Tanska",
+        "confidence": "Korkea"
+      },
+      "koenraad-koen-monsieurs-md-phd": {
+        "role": "Hätätilalääketieteen johtaja; professori",
+        "interests": "ERC-ohjeet; ALS; hengitystiet; koulutus",
+        "country": "Belgia",
+        "confidence": "Korkea"
+      },
+      "paul-swindell": {
+        "role": "Perustaja/puheenjohtaja; selviytyjien edustaja",
+        "interests": "Vertais­tuki; koettu kokemus; yleisötyö",
+        "country": "Yhdistynyt kuningaskunta",
+        "confidence": "Korkea (henkilö) / Keskitaso (sijainti)"
+      },
+      "dave-cleland": {
+        "role": "Sydänpysähdyksen selviytyjä; tarinankertoja",
+        "interests": "Koettu kokemus; selviytyjien edunvalvonta",
+        "country": "Yhdistynyt kuningaskunta",
+        "confidence": "Korkea (henkilö) / Keskitaso (sijainti)"
+      },
+      "esther-kuku": {
+        "role": "Viestintä- ja sidosryhmäjohtaja",
+        "interests": "Yleisöosallistuminen; kumppanuudet; viestintä",
+        "country": "Yhdistynyt kuningaskunta",
+        "confidence": "Korkea"
+      },
+      "victoria-wragg-rn": {
+        "role": "Kliininen johtaja",
+        "interests": "Selviytyjien hoitopolut; laatuvaatimukset; jälkihoito",
+        "country": "Yhdistynyt kuningaskunta",
+        "confidence": "Korkea"
+      },
+      "lorenzo-gamberini-md": {
+        "role": "Anestesia ja tehohoito; ensihoito",
+        "interests": "Sydänpysähdys; ensihoitojärjestelmät; edistynyt elvytys",
+        "country": "Italia",
+        "confidence": "Korkea"
+      },
+      "bo-gregers-winkel-md-dmsc": {
+        "role": "Kardiologian erikoislääkäri; tutkimusjohtaja",
+        "interests": "Äkillinen sydänkuolema; tulokset sydänpysähdyksen jälkeen",
+        "country": "Tanska",
+        "confidence": "Korkea"
+      },
+      "guglielmo-imbriaco": {
+        "role": "Tieteellisen toimikunnan jäsen",
+        "interests": "Ensihoito; koulutus; elvytyksen tutkimus",
+        "country": "Italia",
+        "confidence": "Korkea (henkilö) / Keskitaso (sijainti)"
+      },
+      "katarina-heimburg": {
+        "role": "Fysioterapeutti ja tutkija",
+        "interests": "Kuntoutus sydänpysähdyksen jälkeen; potilaskeskeiset tulokset",
+        "country": "Ruotsi",
+        "confidence": "Korkea"
+      },
+      "nicole-marie-zerafa-likely": {
+        "role": "Kouluttaja; yleislääketieteen erikoistuja; MRC-yhteistyökumppani",
+        "interests": "Elvytyskoulutus; yhteisökoulutus",
+        "country": "Malta",
+        "confidence": "Keskitaso"
+      },
+      "kirstie-l-haywood-phd": {
+        "role": "Terveysvaikutusten professori",
+        "interests": "PROM-mittarit; elämänlaatu; selviytyminen",
+        "country": "Yhdistynyt kuningaskunta",
+        "confidence": "Korkea"
+      },
+      "annette-waldemar": {
+        "role": "Erikoissairaanhoitaja; tutkija",
+        "interests": "Perheen läsnäollessa tapahtuva elvytys; selviytyjien tarpeet",
+        "country": "Ruotsi",
+        "confidence": "Korkea"
+      },
+      "mette-kirstine-wagner": {
+        "role": "Kardiologia; selviytyminen ja mielenterveys",
+        "interests": "Työhön paluu; mielenterveys sydänpysähdyksen jälkeen",
+        "country": "Tanska",
+        "confidence": "Korkea"
+      },
+      "piritta-set-l": {
+        "role": "Apulaisylilääkäri (EMS)",
+        "interests": "Lääkärivetoiset ensihoitoyksiköt; hoitojärjestelmät",
+        "country": "Suomi",
+        "confidence": "Korkea"
+      },
+      "marta-dembkowska-przyby-md": {
+        "role": "Anestesiologia ja tehohoito; ERC-komiteat",
+        "interests": "Anestesiologia; elvytyskoulutus",
+        "country": "Puola",
+        "confidence": "Korkea (henkilö) / Keskitaso (sähköpostilinkki)"
+      },
+      "tomasz-lonc-md": {
+        "role": "Anestesiologia ja tehohoito",
+        "interests": "Alueellinen anestesia; tehohoidon tulokset",
+        "country": "Puola",
+        "confidence": "Keski-korkea"
+      },
+      "vicky-v-l-joshi-phd": {
+        "role": "Fysioterapian lehtori",
+        "interests": "Selviytyminen sydänpysähdyksestä; kuntoutus",
+        "country": "Yhdistynyt kuningaskunta",
+        "confidence": "Korkea"
+      },
+      "cyprus-resuscitation-council-kysan": {
+        "role": "Kansallinen elvytysneuvosto (organisaatio)",
+        "interests": "Koulutus, ohjeiden käyttöönotto ja yleisötyö Kyproksella",
+        "country": "Kypros",
+        "confidence": "Korkea"
+      },
+      "marco-mion-cpsychol": {
+        "role": "Kliininen psykologi ja tutkija",
+        "interests": "Selviytyminen sydänpysähdyksestä; neurokuntoutus; palautejärjestelmät; digitaalinen tuki (V-CARE)",
+        "country": "Yhdistynyt kuningaskunta",
+        "confidence": "Korkea"
+      },
+      "alexander-presciutti": {
+        "role": "Tutkija (elvytys/käyttäytymistieteet)",
+        "interests": "Elvytyksen tiede; käyttäytymis- ja tulostutkimus (tarkentuu)",
+        "country": "Yhdysvallat",
+        "confidence": "Keskitaso"
+      }
+    },
+    "sv": {
+      "stefan-jutterdal": {
+        "role": "Fysioterapeut; patient-/överlevnadsförespråkare",
+        "interests": "Personcentrerad rehabilitering; patientförespråkande efter hjärthändelse",
+        "country": "Sverige",
+        "confidence": "Medel"
+      },
+      "johan-israelsson-rn-phd": {
+        "role": "IVA-sjuksköterska och forskare",
+        "interests": "Uppföljning efter hjärtstopp; livskvalitet; psykologiska utfall",
+        "country": "Sverige",
+        "confidence": "Hög"
+      },
+      "aymeric-lejeune": {
+        "role": "Nätverks-/programledare",
+        "interests": "Utbildningsnätverk; kurser; ERC:s verksamhet",
+        "country": "Belgien",
+        "confidence": "Hög"
+      },
+      "federico-semeraro-md": {
+        "role": "Ordförande; anestesi och intensivvård / prehospital akutsjukvård",
+        "interests": "Utbildning i HLR; riktlinjer; HLR av förbipasserande",
+        "country": "Italien",
+        "confidence": "Hög"
+      },
+      "katie-dainty-phd": {
+        "role": "Forskningsledare för patientcentrerade resultat",
+        "interests": "Överlevares och familjers erfarenheter; kvalitativa och mixade metoder",
+        "country": "Kanada",
+        "confidence": "Hög"
+      },
+      "freddy-lippert-md": {
+        "role": "Ambulanssjukvårdsledare; tidigare vd, EMS Köpenhamn",
+        "interests": "Vårdssystem för hjärtstopp; larmcentral; aktivering av förbipasserande",
+        "country": "Danmark",
+        "confidence": "Hög"
+      },
+      "koenraad-koen-monsieurs-md-phd": {
+        "role": "Chef för akutsjukvård; professor",
+        "interests": "ERC-riktlinjer; ALS; luftväg; utbildning",
+        "country": "Belgien",
+        "confidence": "Hög"
+      },
+      "paul-swindell": {
+        "role": "Grundare/ordförande; överlevnadsförespråkare",
+        "interests": "Kamratstöd; levd erfarenhet; folkbildning",
+        "country": "Storbritannien",
+        "confidence": "Hög (person) / Medel (plats)"
+      },
+      "dave-cleland": {
+        "role": "OHCA-överlevare; berättare",
+        "interests": "Levd erfarenhet; förespråkande för överlevare",
+        "country": "Storbritannien",
+        "confidence": "Hög (person) / Medel (plats)"
+      },
+      "esther-kuku": {
+        "role": "Kommunikations- och engagemangsdirektör",
+        "interests": "Allmänhetens engagemang; partnerskap; kommunikation",
+        "country": "Storbritannien",
+        "confidence": "Hög"
+      },
+      "victoria-wragg-rn": {
+        "role": "Klinisk ledare",
+        "interests": "Överlevnadsflöden; kvalitetsstandarder; eftervård",
+        "country": "Storbritannien",
+        "confidence": "Hög"
+      },
+      "lorenzo-gamberini-md": {
+        "role": "Anestesi och intensivvård; prehospital akutsjukvård",
+        "interests": "Hjärtstopp; prehospitala system; avancerad hjärt-lungräddning",
+        "country": "Italien",
+        "confidence": "Hög"
+      },
+      "bo-gregers-winkel-md-dmsc": {
+        "role": "Kardiologkonsult; forskningschef",
+        "interests": "Plötslig hjärtdöd; utfall efter hjärtstopp",
+        "country": "Danmark",
+        "confidence": "Hög"
+      },
+      "guglielmo-imbriaco": {
+        "role": "Ledamot i vetenskapliga kommittén",
+        "interests": "Ambulanssjukvård; utbildning; återupplivningsforskning",
+        "country": "Italien",
+        "confidence": "Hög (person) / Medel (plats)"
+      },
+      "katarina-heimburg": {
+        "role": "Fysioterapeut och forskare",
+        "interests": "Rehabilitering efter hjärtstopp; patientcentrerade utfall",
+        "country": "Sverige",
+        "confidence": "Hög"
+      },
+      "nicole-marie-zerafa-likely": {
+        "role": "Instruktör; AT-läkare i allmänmedicin; MRC-medverkande",
+        "interests": "HLR-utbildning; utbildning i samhället",
+        "country": "Malta",
+        "confidence": "Medel"
+      },
+      "kirstie-l-haywood-phd": {
+        "role": "Professor i hälsoutfall",
+        "interests": "PROMs; livskvalitet; överlevnad",
+        "country": "Storbritannien",
+        "confidence": "Hög"
+      },
+      "annette-waldemar": {
+        "role": "Specialistsjuksköterska; forskare",
+        "interests": "Återupplivning med familjen närvarande; överlevnadsbehov",
+        "country": "Sverige",
+        "confidence": "Hög"
+      },
+      "mette-kirstine-wagner": {
+        "role": "Kardiologi; överlevnad och psykisk hälsa",
+        "interests": "Återgång till arbete; psykisk hälsa efter hjärtstopp",
+        "country": "Danmark",
+        "confidence": "Hög"
+      },
+      "piritta-set-l": {
+        "role": "Biträdande chefsläkare (ambulanssjukvård)",
+        "interests": "Läkarbemannade ambulansenheter; vårdsystem",
+        "country": "Finland",
+        "confidence": "Hög"
+      },
+      "marta-dembkowska-przyby-md": {
+        "role": "Anestesi och intensivvård; ERC-kommittéer",
+        "interests": "Anestesi; återupplivningsutbildning",
+        "country": "Polen",
+        "confidence": "Hög (person) / Medel (e-postlänk)"
+      },
+      "tomasz-lonc-md": {
+        "role": "Anestesi och intensivvård",
+        "interests": "Regional anestesi; intensivvårdsutfall",
+        "country": "Polen",
+        "confidence": "Medelhög"
+      },
+      "vicky-v-l-joshi-phd": {
+        "role": "Universitetslektor i fysioterapi",
+        "interests": "Överlevnad efter hjärtstopp; rehabilitering",
+        "country": "Storbritannien",
+        "confidence": "Hög"
+      },
+      "cyprus-resuscitation-council-kysan": {
+        "role": "Nationella återupplivningsrådet (organisation)",
+        "interests": "Utbildning, riktlinjeimplementering och allmänhetens engagemang på Cypern",
+        "country": "Cypern",
+        "confidence": "Hög"
+      },
+      "marco-mion-cpsychol": {
+        "role": "Klinisk psykolog och forskare",
+        "interests": "Överlevnad efter hjärtstopp; neurorehabilitering; återkopplingssystem; digitalt stöd (V-CARE)",
+        "country": "Storbritannien",
+        "confidence": "Hög"
+      },
+      "alexander-presciutti": {
+        "role": "Forskare (återupplivning/beteendevetenskap)",
+        "interests": "Återupplivningsvetenskap; beteende- och utfallsforskning (preliminärt)",
+        "country": "USA",
+        "confidence": "Medel"
+      }
+    },
+    "it": {
+      "stefan-jutterdal": {
+        "role": "Fisioterapista; sostenitore di pazienti/sopravvissuti",
+        "interests": "Riabilitazione centrata sulla persona; advocacy per i pazienti dopo un evento cardiaco",
+        "country": "Svezia",
+        "confidence": "Media"
+      },
+      "johan-israelsson-rn-phd": {
+        "role": "Infermiere di terapia intensiva e ricercatore",
+        "interests": "Follow-up dopo arresto cardiaco extraospedaliero; qualità della vita; esiti psicologici",
+        "country": "Svezia",
+        "confidence": "Alta"
+      },
+      "aymeric-lejeune": {
+        "role": "Responsabile di rete/programma",
+        "interests": "Reti formative; corsi; operazioni dell'ERC",
+        "country": "Belgio",
+        "confidence": "Alta"
+      },
+      "federico-semeraro-md": {
+        "role": "Presidente; anestesia e rianimazione / emergenza preospedaliera",
+        "interests": "Formazione alla rianimazione; linee guida; RCP dei presenti",
+        "country": "Italia",
+        "confidence": "Alta"
+      },
+      "katie-dainty-phd": {
+        "role": "Presidente della ricerca su esiti centrati sul paziente",
+        "interests": "Esperienza di sopravvissuti e famiglie; metodi qualitativi e misti",
+        "country": "Canada",
+        "confidence": "Alta"
+      },
+      "freddy-lippert-md": {
+        "role": "Leader EMS; ex CEO, EMS Copenaghen",
+        "interests": "Sistemi di cura per l'OHCA; centrale operativa; attivazione dei testimoni",
+        "country": "Danimarca",
+        "confidence": "Alta"
+      },
+      "koenraad-koen-monsieurs-md-phd": {
+        "role": "Direttore di medicina d'urgenza; professore",
+        "interests": "Linee guida ERC; ALS; vie aeree; formazione",
+        "country": "Belgio",
+        "confidence": "Alta"
+      },
+      "paul-swindell": {
+        "role": "Fondatore/presidente; sostenitore dei sopravvissuti",
+        "interests": "Supporto tra pari; esperienza vissuta; sensibilizzazione pubblica",
+        "country": "Regno Unito",
+        "confidence": "Alta (persona) / Media (localizzazione)"
+      },
+      "dave-cleland": {
+        "role": "Sopravvissuto a OHCA; narratore",
+        "interests": "Esperienza vissuta; advocacy per i sopravvissuti",
+        "country": "Regno Unito",
+        "confidence": "Alta (persona) / Media (localizzazione)"
+      },
+      "esther-kuku": {
+        "role": "Direttrice delle comunicazioni e del coinvolgimento",
+        "interests": "Coinvolgimento del pubblico; partenariati; comunicazione",
+        "country": "Regno Unito",
+        "confidence": "Alta"
+      },
+      "victoria-wragg-rn": {
+        "role": "Responsabile clinica",
+        "interests": "Percorsi dei sopravvissuti; standard di qualità; assistenza post-dimissione",
+        "country": "Regno Unito",
+        "confidence": "Alta"
+      },
+      "lorenzo-gamberini-md": {
+        "role": "Anestesia e terapia intensiva; emergenza preospedaliera",
+        "interests": "OHCA; sistemi preospedalieri; supporto vitale avanzato",
+        "country": "Italia",
+        "confidence": "Alta"
+      },
+      "bo-gregers-winkel-md-dmsc": {
+        "role": "Cardiologo consulente; responsabile della ricerca",
+        "interests": "Morte cardiaca improvvisa; esiti dopo OHCA",
+        "country": "Danimarca",
+        "confidence": "Alta"
+      },
+      "guglielmo-imbriaco": {
+        "role": "Membro del comitato scientifico",
+        "interests": "EMS; formazione; scienza della rianimazione",
+        "country": "Italia",
+        "confidence": "Alta (persona) / Media (localizzazione)"
+      },
+      "katarina-heimburg": {
+        "role": "Fisioterapista e ricercatrice",
+        "interests": "Riabilitazione dopo OHCA; esiti centrati sul paziente",
+        "country": "Svezia",
+        "confidence": "Alta"
+      },
+      "nicole-marie-zerafa-likely": {
+        "role": "Istruttrice; specializzanda in medicina generale; collaboratrice MRC",
+        "interests": "Formazione alla rianimazione; training comunitario",
+        "country": "Malta",
+        "confidence": "Media"
+      },
+      "kirstie-l-haywood-phd": {
+        "role": "Professoressa di esiti di salute",
+        "interests": "PROMs; qualità della vita; sopravvivenza",
+        "country": "Regno Unito",
+        "confidence": "Alta"
+      },
+      "annette-waldemar": {
+        "role": "Infermiere specialista; ricercatrice",
+        "interests": "Rianimazione con la famiglia presente; bisogni dei sopravvissuti",
+        "country": "Svezia",
+        "confidence": "Alta"
+      },
+      "mette-kirstine-wagner": {
+        "role": "Cardiologia; sopravvivenza e salute mentale",
+        "interests": "Ritorno al lavoro; salute mentale dopo arresto cardiaco",
+        "country": "Danimarca",
+        "confidence": "Alta"
+      },
+      "piritta-set-l": {
+        "role": "Vice primario (EMS)",
+        "interests": "EMS con medici; sistemi di cura",
+        "country": "Finlandia",
+        "confidence": "Alta"
+      },
+      "marta-dembkowska-przyby-md": {
+        "role": "Anestesia e terapia intensiva; comitati ERC",
+        "interests": "Anestesia; formazione alla rianimazione",
+        "country": "Polonia",
+        "confidence": "Alta (persona) / Media (link e-mail)"
+      },
+      "tomasz-lonc-md": {
+        "role": "Anestesia e terapia intensiva",
+        "interests": "Anestesia regionale; esiti di terapia intensiva",
+        "country": "Polonia",
+        "confidence": "Medio-alta"
+      },
+      "vicky-v-l-joshi-phd": {
+        "role": "Docente di fisioterapia",
+        "interests": "Sopravvivenza dopo OHCA; riabilitazione",
+        "country": "Regno Unito",
+        "confidence": "Alta"
+      },
+      "cyprus-resuscitation-council-kysan": {
+        "role": "Consiglio nazionale di rianimazione (organizzazione)",
+        "interests": "Formazione, attuazione delle linee guida e coinvolgimento del pubblico a Cipro",
+        "country": "Cipro",
+        "confidence": "Alta"
+      },
+      "marco-mion-cpsychol": {
+        "role": "Psicologo clinico e ricercatore",
+        "interests": "Sopravvivenza dopo OHCA; neuroriabilitazione; sistemi di feedback; supporto digitale (V-CARE)",
+        "country": "Regno Unito",
+        "confidence": "Alta"
+      },
+      "alexander-presciutti": {
+        "role": "Ricercatore (rianimazione/scienze comportamentali)",
+        "interests": "Scienza della rianimazione; ricerca comportamentale e sugli esiti (da confermare)",
+        "country": "Stati Uniti",
+        "confidence": "Media"
+      }
+    }
+  }
 }
