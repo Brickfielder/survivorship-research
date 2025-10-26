@@ -865,6 +865,10 @@ const state = {
   rawPeople: [],
   locales: {},
   language: DEFAULT_LANGUAGE,
+  dataReady: false,
+  pendingLanguage: null,
+  peopleCache: {},
+  metaCache: {},
 };
 
 const normalise = (value) => (value ?? "").toString().toLowerCase();
@@ -934,30 +938,45 @@ const cloneValue = (value) => {
   return value;
 };
 
-const localisePerson = (person, lang) => {
-  const overrides = resolvePath(state.locales, `${lang}.people.${person.id}`);
-  if (!overrides || typeof overrides !== "object") {
-    return { ...person };
-  }
-  const next = { ...person };
-  Object.entries(overrides).forEach(([key, value]) => {
+const clonePerson = (person) => {
+  const next = {};
+  Object.entries(person).forEach(([key, value]) => {
     next[key] = cloneValue(value);
   });
   return next;
 };
 
 const getLocalisedPeople = (lang) => {
-  const base = Array.isArray(state.rawPeople) ? state.rawPeople : [];
-  return base.map((person) => localisePerson(person, lang));
+  const safeLang = SUPPORTED_LANGUAGES.includes(lang) ? lang : DEFAULT_LANGUAGE;
+  if (!state.peopleCache[safeLang]) {
+    const base = Array.isArray(state.rawPeople) ? state.rawPeople : [];
+    const overridesRoot = resolvePath(state.locales, `${safeLang}.people`);
+    const overridesById = overridesRoot && typeof overridesRoot === "object" ? overridesRoot : {};
+
+    state.peopleCache[safeLang] = base.map((person) => {
+      const baseClone = clonePerson(person);
+      const overrides = overridesById[person.id];
+      if (!overrides || typeof overrides !== "object") {
+        return baseClone;
+      }
+      Object.entries(overrides).forEach(([key, value]) => {
+        baseClone[key] = cloneValue(value);
+      });
+      return baseClone;
+    });
+  }
+  return state.peopleCache[safeLang].map((person) => clonePerson(person));
 };
 
 const getLocalisedMeta = (lang) => {
-  const overrides = resolvePath(state.locales, `${lang}.meta`);
-  const base = state.rawMeta && typeof state.rawMeta === "object" ? state.rawMeta : {};
-  if (!overrides || typeof overrides !== "object") {
-    return { ...base };
+  const safeLang = SUPPORTED_LANGUAGES.includes(lang) ? lang : DEFAULT_LANGUAGE;
+  if (!state.metaCache[safeLang]) {
+    const overrides = resolvePath(state.locales, `${safeLang}.meta`);
+    const base = state.rawMeta && typeof state.rawMeta === "object" ? state.rawMeta : {};
+    const merged = overrides && typeof overrides === "object" ? { ...base, ...overrides } : { ...base };
+    state.metaCache[safeLang] = merged;
   }
-  return { ...base, ...overrides };
+  return { ...state.metaCache[safeLang] };
 };
 
 const buildKeywords = (person) =>
@@ -1198,28 +1217,20 @@ const loadData = async () => {
   return response.json();
 };
 
-const applyTranslations = (lang) => {
-  const nextLang = SUPPORTED_LANGUAGES.includes(lang) ? lang : DEFAULT_LANGUAGE;
-  state.language = nextLang;
-  document.documentElement.lang = nextLang;
-  if (languageSelect && languageSelect.value !== nextLang) {
-    languageSelect.value = nextLang;
-  }
-
-  document.title = translate("title");
+const applyStaticTranslations = (lang) => {
+  document.title = translate("title", {}, lang);
 
   document.querySelectorAll("[data-i18n]").forEach((el) => {
-    if (el.dataset.i18n === "footer.notice") {
+    const key = el.dataset.i18n;
+    if (!key || key === "footer.notice") {
       return;
     }
-    el.textContent = translate(el.dataset.i18n);
+    el.textContent = translate(key, {}, lang);
   });
 
   const footerNotice = document.querySelector('[data-i18n="footer.notice"]');
   if (footerNotice) {
-    footerNotice.textContent = translate("footer.notice", {
-      year: new Date().getFullYear(),
-    });
+    footerNotice.textContent = translate("footer.notice", { year: new Date().getFullYear() }, lang);
   }
 
   document.querySelectorAll("[data-i18n-html]").forEach((el) => {
@@ -1228,24 +1239,41 @@ const applyTranslations = (lang) => {
     if (key === "footer.data") {
       const email = el.dataset.email ?? "info@example.org";
       const emailLink = `<a href="mailto:${email}" style="color:#fff; text-underline-offset:2px;">${email}</a>`;
-      el.innerHTML = translate(key, { email, emailLink });
+      el.innerHTML = translate(key, { email, emailLink }, lang);
     } else {
-      el.innerHTML = translate(key);
+      el.innerHTML = translate(key, {}, lang);
     }
   });
 
   document.querySelectorAll("[data-i18n-placeholder]").forEach((el) => {
     const key = el.dataset.i18nPlaceholder;
     if (!key) return;
-    el.setAttribute("placeholder", translate(key));
+    el.setAttribute("placeholder", translate(key, {}, lang));
   });
 
   document.querySelectorAll("[data-i18n-aria-label]").forEach((el) => {
     const key = el.dataset.i18nAriaLabel;
     if (!key) return;
-    el.setAttribute("aria-label", translate(key));
+    el.setAttribute("aria-label", translate(key, {}, lang));
   });
+};
 
+const applyTranslations = (lang) => {
+  const nextLang = SUPPORTED_LANGUAGES.includes(lang) ? lang : DEFAULT_LANGUAGE;
+  state.language = nextLang;
+  document.documentElement.lang = nextLang;
+  if (languageSelect && languageSelect.value !== nextLang) {
+    languageSelect.value = nextLang;
+  }
+
+  applyStaticTranslations(nextLang);
+
+  if (!state.dataReady) {
+    state.pendingLanguage = nextLang;
+    return;
+  }
+
+  state.pendingLanguage = null;
   state.meta = getLocalisedMeta(nextLang);
   state.people = getLocalisedPeople(nextLang);
   state.total = state.people.length;
@@ -1276,9 +1304,16 @@ const initialise = async () => {
     state.rawPeople = Array.isArray(data.people) ? data.people : [];
     state.rawMeta = data.meta && typeof data.meta === "object" ? data.meta : {};
     state.locales = data.locales && typeof data.locales === "object" ? data.locales : {};
-    applyTranslations(state.language);
+    state.peopleCache = {};
+    state.metaCache = {};
+    state.dataReady = true;
+    const targetLanguage = state.pendingLanguage ?? state.language;
+    state.pendingLanguage = null;
+    applyTranslations(targetLanguage);
   } catch (error) {
     console.error(error);
+    state.dataReady = false;
+    state.pendingLanguage = null;
     if (statusEl) {
       statusEl.textContent = translate("errors.directory");
     }
