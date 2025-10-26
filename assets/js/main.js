@@ -1334,6 +1334,8 @@ const initialise = async () => {
     applyTranslations(state.language);
   } catch (error) {
     console.error(error);
+    state.dataReady = false;
+    state.pendingLanguage = null;
     if (statusEl) {
       statusEl.textContent = translate("errors.directory");
     }
