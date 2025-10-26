@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Survivorship & Co‑Survivorship Research – Map & Directory</title>
+  <style>
+    :root {
+      --brand-blue: #2c5f8d;
+      --brand-blue-dark: #1a3d5c;
+      --brand-red: #c62828;
+      --ink: #1f2937;
+      --muted: #6b7280;
+      --bg: #f6f7f9;
+      --card: #ffffff;
+      --accent: #ffedd5;
+      --radius: 10px;
+      --shadow: 0 8px 20px rgba(0,0,0,0.06);
+    }
+
+    * { box-sizing: border-box; }
+    html, body { height: 100%; }
+    body {
+      margin: 0;
+      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji", "Segoe UI Emoji";
+      color: var(--ink);
+      background: var(--bg);
+      line-height: 1.6;
+    }
+
+    /* Header */
+    header {
+      position: sticky; top: 0; z-index: 50;
+      backdrop-filter: blur(8px);
+      background: linear-gradient(90deg, #ffffffcc, #ffffffee);
+      border-bottom: 1px solid #e5e7eb;
+    }
+    .nav { max-width: 1200px; margin: 0 auto; padding: 12px 20px; display: flex; align-items: center; justify-content: space-between; }
+    .brand { display:flex; align-items:center; gap:10px; font-weight: 700; }
+    .brand-badge { width:36px; height:36px; display:grid; place-items:center; border-radius: 11px; background: #fee2e2; color: var(--brand-red); font-weight: 800; box-shadow: var(--shadow); }
+    .nav a { color: var(--ink); text-decoration: none; font-size: 14px; padding: 8px 10px; border-radius: 8px; }
+    .nav a:hover { background: #f3f4f6; }
+    .cta { background: var(--brand-red); color: #fff !important; box-shadow: var(--shadow); }
+    .cta:hover { background: #a11f1f; }
+
+    /* Hero */
+    .hero { background: linear-gradient(135deg, var(--brand-blue), var(--brand-blue-dark)); color:#fff; }
+    .hero-wrap { max-width:1200px; margin:0 auto; padding: 42px 20px; display:grid; grid-template-columns: 1.1fr 0.9fr; gap: 28px; align-items:center; }
+    .hero h1 { margin:0 0 10px; font-size: clamp(26px, 3.2vw, 40px); line-height:1.15; }
+    .hero p { margin: 0 0 16px; color: #e5ecf5; }
+    .hero .buttons a { display:inline-block; margin-right:10px; margin-top:6px; padding:10px 14px; border-radius: 10px; text-decoration:none; font-weight:600; font-size:14px; }
+    .btn-dark { background:#0b1220; color:#fff; }
+    .btn-ghost { background:#ffffff22; color:#fff; border:1px solid #ffffff44; }
+    .mock { background: #ffffff; border-radius: 16px; padding: 16px; box-shadow: var(--shadow); min-height: 260px; display:grid; place-items:center; color: var(--muted); text-align:center; }
+
+    /* Main layout */
+    main { max-width:1200px; margin: 0 auto; padding: 24px 20px; display:block; }
+
+    /* Aside (Q&A) */
+    
+    .qa-card { background: var(--card); border-radius: var(--radius); box-shadow: var(--shadow); border:1px solid #e5e7eb; overflow:hidden; }
+    .qa-head { padding: 16px 18px; border-bottom:1px solid #e5e7eb; }
+    .qa-head h2 { margin:0; color: var(--brand-red); font-size: 18px; }
+    .qa-note { margin: 6px 0 0; font-size: 13px; color: var(--muted); font-style: italic; }
+    details { border-top: 1px solid #eef0f2; }
+    summary { list-style: none; cursor: pointer; padding: 14px 18px; font-weight: 600; display:flex; align-items:center; gap:12px; }
+    summary::-webkit-details-marker { display:none; }
+    .plus { width: 22px; height:22px; border:1px solid #e5e7eb; border-radius:6px; display:grid; place-items:center; color: var(--brand-red); font-weight: 800; transition: transform .2s ease; }
+    details[open] .plus { transform: rotate(45deg); }
+    .answer { padding: 0 18px 18px 54px; color: #4b5563; font-size: 14.5px; }
+
+    /* Content column */
+    .section { background: var(--card); border-radius: var(--radius); padding: 18px; box-shadow: var(--shadow); border:1px solid #e5e7eb; margin-bottom: 20px; }
+    .section h3 { margin:0 0 8px; color: var(--brand-blue-dark); font-size: 18px; }
+    .muted { color: var(--muted); font-size: 14px; }
+
+    /* Map block */
+    .map { border-radius: 12px; border:2px dashed #cbd5e1; background: linear-gradient(135deg, #e8f4f8, #d9e9f3); height: 440px; display:grid; place-items:center; color: var(--brand-blue-dark); }
+
+    /* Filters */
+    .filters { display:flex; flex-wrap: wrap; gap:8px; margin: 6px 0 12px; }
+    .chip { border:1px solid #e5e7eb; border-radius: 999px; padding: 6px 10px; background:#f8fafc; font-size:12px; }
+
+    /* Directory */
+    .toolbar { display:flex; gap:10px; align-items:center; flex-wrap:wrap; margin-bottom: 10px; }
+    .search { flex:1 1 220px; border:1px solid #e5e7eb; padding:10px 12px; border-radius: 10px; font-size:14px; }
+    .cards { display:grid; grid-template-columns: repeat(12, 1fr); gap: 14px; }
+    .card { grid-column: span 6; background:#fff; border:1px solid #e5e7eb; border-radius: 12px; padding: 14px; box-shadow: var(--shadow); display:flex; gap:12px; align-items:flex-start; }
+    .avatar { width:44px; height:44px; border-radius: 10px; display:grid; place-items:center; background:#eef2ff; color:#4338ca; font-weight:800; }
+    .meta { font-size: 13px; color: var(--muted); }
+    .tags { display:flex; gap:6px; flex-wrap:wrap; margin-top: 8px; }
+    .tag { font-size: 11px; border:1px solid #e5e7eb; padding: 4px 8px; border-radius: 999px; background:#f8fafc; }
+
+    /* CTA ribbon */
+    .ribbon { background: var(--accent); border-left: 4px solid #fb923c; padding: 14px; border-radius: 10px; }
+
+    /* Form */
+    .form { display:grid; grid-template-columns: repeat(2, 1fr); gap: 14px; }
+    .form .group { display:flex; flex-direction:column; }
+    .form label { font-weight: 600; font-size: 13px; margin-bottom: 6px; }
+    .form input, .form textarea { padding: 10px 12px; border:1px solid #e5e7eb; border-radius: 10px; font: inherit; }
+    .form textarea { min-height: 110px; resize: vertical; }
+    .consent { display:flex; align-items:flex-start; gap:10px; font-size: 14px; color: var(--muted); }
+    .submit { background: var(--brand-red); color:#fff; padding: 10px 16px; border:none; border-radius: 10px; font-weight:700; cursor:pointer; }
+    .submit:hover { background:#a11f1f; }
+
+    /* Footer */
+    footer { margin-top: 30px; background: var(--brand-blue); color: #fff; }
+    .foot { max-width:1200px; margin: 0 auto; padding: 28px 20px; font-size: 14px; display:flex; justify-content:space-between; flex-wrap:wrap; gap:10px; }
+
+    /* Responsive */
+    @media (max-width: 980px) { .cards .card { grid-column: span 12; } .hero-wrap { grid-template-columns: 1fr; } }  .cards .card { grid-column: span 12; } .hero-wrap { grid-template-columns: 1fr; } }
+      /* Removed sticky sidebar; Q&A now full-width */
+    .qa-list details { border-top: 1px solid #eef0f2; }
+    .qa-list details:first-of-type { border-top: 0; }
+    </style>
+</head>
+<body>
+  <header>
+    <nav class="nav" aria-label="Primary">
+      <div class="brand">
+        <div class="brand-badge" aria-hidden>OH</div>
+        <div>Survivorship & Co‑Survivorship Research</div>
+      </div>
+      <div>
+        <a href="#map">Map</a>
+        <a href="#directory">Researchers</a>
+        <a href="#qa">Q&A</a>
+        <a href="#submit" class="cta">Add yourself</a>
+      </div>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-wrap">
+      <div>
+        <h1>Mapping the people improving life after cardiac arrest</h1>
+        <p>Discover researchers, clinicians, survivors and co‑survivors. Find collaborators, share ideas, and accelerate survivorship science and services.</p>
+        <div class="buttons">
+          <a class="btn-dark" href="#map">View the map</a>
+          <a class="btn-ghost" href="#submit">Add your entry</a>
+        </div>
+      </div>
+      <div class="mock" aria-label="map preview placeholder">
+        Interactive map preview — embed Leaflet/MapLibre/Google Maps here
+      </div>
+    </div>
+  </section>
+
+  <main>
+    <!-- Sidebar Q&A (mirrors the Austrian example, but now sticky) -->
+    <!-- Q&A moved to full-width main content after CTA, matching uploaded file position -->
+    
+
+    <!-- Main content column -->
+    <div>
+      <section id="map" class="section">
+        <h3>Global map</h3>
+        <p class="muted">Explore who is working on survivorship and co‑survivorship around the world. Filter by topic, population and methods.</p>
+        <div class="filters" aria-label="map filters">
+          <span class="chip">Cognition</span>
+          <span class="chip">Psychological support</span>
+          <span class="chip">Quality of life</span>
+          <span class="chip">Return to work</span>
+          <span class="chip">Family & co‑survivors</span>
+          <span class="chip">Registry analyses</span>
+        </div>
+        <div class="map" role="img" aria-label="interactive world map placeholder">Embed map here</div>
+      </section>
+
+      <section id="directory" class="section">
+        <h3>Researchers & collaborators</h3>
+        <div class="toolbar">
+          <input id="search" class="search" type="search" placeholder="Search by name, org, tag, country…" aria-label="Search directory" />
+          <a class="cta" href="#submit" style="padding:10px 12px; border-radius:10px; text-decoration:none;">Add yourself</a>
+        </div>
+        <div class="cards" id="cards">
+          <!-- sample cards (replace with generated content from JSON/Airtable) -->
+          <article class="card" data-keywords="UK King's cognition family QoL">
+            <div class="avatar" aria-hidden>MM</div>
+            <div>
+              <strong>Example Person</strong>
+              <div class="meta">Clinical Psychologist • King's College London • UK</div>
+              <p class="muted">Focus on post‑OHCA cognitive outcomes, return to work, and family support.</p>
+              <div class="tags"><span class="tag">#cognition</span><span class="tag">#family</span><span class="tag">#QoL</span></div>
+            </div>
+          </article>
+          <article class="card" data-keywords="Sweden Karolinska registry longitudinal">
+            <div class="avatar" aria-hidden>KI</div>
+            <div>
+              <strong>Example Team</strong>
+              <div class="meta">Research Group • Karolinska Institutet • Sweden</div>
+              <p class="muted">Registry analyses on long‑term survivorship and community reintegration.</p>
+              <div class="tags"><span class="tag">#registry</span><span class="tag">#longitudinal</span></div>
+            </div>
+          </article>
+          <article class="card" data-keywords="Poland PRC NGO peer support policy">
+            <div class="avatar" aria-hidden>PR</div>
+            <div>
+              <strong>Example Network</strong>
+              <div class="meta">Survivor‑led NGO • Polish Resuscitation Council • Poland</div>
+              <p class="muted">Peer support groups and advocacy for co‑survivors; developing national pathways.</p>
+              <div class="tags"><span class="tag">#peer‑support</span><span class="tag">#policy</span></div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="ribbon">
+          <strong>Are you active in survivorship research?</strong>
+          <div class="muted">If you don't find yourself on the map, add your details below. See the Q&A for scope and sources.</div>
+        </div>
+      </section>
+
+      <!-- Q&A section (full width) -->
+      <section id="qa" class="section">
+        <h3 style="color:#c62828; margin-bottom:6px;">Questions and answers on the map of survivorship</h3>
+        <p class="muted" style="margin-bottom:10px; font-style:italic;">This list does not claim to be complete, nor can the accuracy or topicality of the information be guaranteed by the editors of this site.</p>
+        <div class="qa-list" style="border:1px solid #e5e7eb; border-radius:10px; overflow:hidden;">
+          <details>
+            <summary><span class="plus" aria-hidden>+</span> Why was the map of survivorship created?</summary>
+            <div class="answer">To connect survivors, co‑survivors, clinicians and researchers working on life after OHCA. Visibility reduces duplication, speeds collaboration, and supports guideline and service development.</div>
+          </details>
+          <details>
+            <summary><span class="plus" aria-hidden>+</span> What does the map show?</summary>
+            <div class="answer">Pins for people and groups active in survivorship: research labs, clinical services, survivor‑led organisations. Each pin links to a short profile: name, role, institution, country/region, and a 1–2 sentence summary.</div>
+          </details>
+          <details>
+            <summary><span class="plus" aria-hidden>+</span> What is the content and sources on which the map is based?</summary>
+            <div class="answer">Primarily self‑submitted entries reviewed by editors, plus publicly available info from institutional pages, publications and conference programmes. Each entry indicates the source and last update.</div>
+          </details>
+          <details>
+            <summary><span class="plus" aria-hidden>+</span> How can I make an entry on the map myself?</summary>
+            <div class="answer">Use the form below or submit a pull request against <code>data/researchers.json</code>. We check scope and GDPR consent, then publish and email confirmation. You can request edits or removal anytime.</div>
+          </details>
+        </div>
+      </section>
+
+      <section id="submit" class="section">
+        <h3>Add yourself to the map</h3>
+        <p class="muted">This demo form doesn’t submit anywhere. Wire it to your backend, Airtable or Netlify Forms.</p>
+        <form class="form" onsubmit="event.preventDefault(); alert('Submitted (demo).');">
+          <div class="group">
+            <label for="name">Full name</label>
+            <input id="name" placeholder="e.g., Jane Doe" required />
+          </div>
+          <div class="group">
+            <label for="role">Role</label>
+            <input id="role" placeholder="Clinical Psychologist / Survivor / Researcher" required />
+          </div>
+          <div class="group">
+            <label for="org">Institution / Group</label>
+            <input id="org" placeholder="e.g., King's College London" required />
+          </div>
+          <div class="group">
+            <label for="country">Country / Region</label>
+            <input id="country" placeholder="e.g., UK" required />
+          </div>
+          <div class="group" style="grid-column: 1 / -1;">
+            <label for="summary">1–2 sentence summary</label>
+            <textarea id="summary" placeholder="I study long‑term cognitive outcomes and family‑centred aftercare…" required></textarea>
+          </div>
+          <div class="group">
+            <label for="email">Email (kept private; used for confirmation)</label>
+            <input id="email" type="email" placeholder="you@example.org" required />
+          </div>
+          <div class="group">
+            <label for="links">Links (optional)</label>
+            <input id="links" placeholder="ORCID, Lab page, LinkedIn…" />
+          </div>
+          <div class="group" style="grid-column: 1 / -1;">
+            <label class="consent">
+              <input type="checkbox" required aria-label="Consent" />
+              <span>I consent to the publication of my entry on the map and understand I can request edits or deletion at any time.</span>
+            </label>
+          </div>
+          <div class="group" style="grid-column: 1 / -1; display:flex; gap:10px;">
+            <button class="submit" type="submit">Submit (demo)</button>
+            <a class="cta" href="#" style="text-decoration:none; padding:10px 16px; border-radius:10px;">Update an existing entry</a>
+          </div>
+        </form>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    <div class="foot">
+      <div>© <span id="year"></span> Survivorship & Co‑Survivorship Research Network — Content CC BY 4.0 unless noted.</div>
+      <div style="opacity:.9">Data notice: entries are published with consent; removal/edit requests honoured. Contact: <a href="mailto:info@example.org" style="color:#fff; text-underline-offset:2px;">info@example.org</a></div>
+    </div>
+  </footer>
+
+  <script>
+    // Year stamp
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Simple client-side filter for directory cards
+    const search = document.getElementById('search');
+    const cards = Array.from(document.querySelectorAll('#cards .card'));
+    function applyFilter() {
+      const q = (search.value || '').toLowerCase().trim();
+      cards.forEach(card => {
+        const hay = (card.getAttribute('data-keywords') + ' ' + card.textContent).toLowerCase();
+        card.style.display = hay.includes(q) ? '' : 'none';
+      });
+    }
+    search?.addEventListener('input', applyFilter);
+  </script>
+</body>
+</html>
