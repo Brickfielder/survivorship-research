@@ -1,0 +1,500 @@
+{
+  "meta": {
+    "title": "Resuscitation Network — People",
+    "updated_at": "2025-10-26",
+    "fields": [
+      "id",
+      "name",
+      "email",
+      "role",
+      "org",
+      "city",
+      "country",
+      "lat",
+      "lng",
+      "interests",
+      "tags",
+      "confidence",
+      "updated_at"
+    ]
+  },
+  "people": [
+    {
+      "name": "Stefan Jutterdal",
+      "email": "stefanjutterdal@hotmail.com",
+      "role": "Physiotherapist; patient/survivor advocate",
+      "org": "Sweden (Kalmar region)",
+      "city": "Kalmar",
+      "country": "Sweden",
+      "lat": 56.663444,
+      "lng": 16.356779,
+      "interests": "Person‑centred rehab; patient advocacy post‑cardiac event",
+      "confidence": "Medium",
+      "tags": [
+        "physiotherapy",
+        "advocacy"
+      ],
+      "id": "stefan-jutterdal",
+      "updated_at": "2025-10-26"
+    },
+    {
+      "name": "Johan Israelsson, RN PhD",
+      "email": "johan.israelsson@regionkalmar.se",
+      "role": "ICU nurse & researcher",
+      "org": "Kalmar County Hospital / Linnaeus University",
+      "city": "Kalmar",
+      "country": "Sweden",
+      "lat": 56.663444,
+      "lng": 16.356779,
+      "interests": "OHCA follow‑up; QoL; psychological outcomes",
+      "confidence": "High",
+      "tags": [
+        "nursing",
+        "research"
+      ],
+      "id": "johan-israelsson-rn-phd",
+      "updated_at": "2025-10-26"
+    },
+    {
+      "name": "Aymeric Lejeune",
+      "email": "aymeric.lejeune@erc.edu",
+      "role": "Network/Programme Lead",
+      "org": "European Resuscitation Council (ERC)",
+      "city": "Antwerp",
+      "country": "Belgium",
+      "lat": 51.219448,
+      "lng": 4.402464,
+      "interests": "Education networks; courses; ERC operations",
+      "confidence": "High",
+      "tags": [
+        "erc",
+        "operations"
+      ],
+      "id": "aymeric-lejeune",
+      "updated_at": "2025-10-26"
+    },
+    {
+      "name": "Federico Semeraro, MD",
+      "email": "federico.semeraro@erc.edu",
+      "role": "President; Anaesthesia & ICU / Prehospital emergency",
+      "org": "European Resuscitation Council; Ospedale Maggiore Bologna",
+      "city": "Bologna",
+      "country": "Italy",
+      "lat": 44.494887,
+      "lng": 11.342616,
+      "interests": "Resuscitation education; guidelines; bystander CPR",
+      "confidence": "High",
+      "tags": [
+        "erc",
+        "anaesthesia",
+        "education"
+      ],
+      "id": "federico-semeraro-md",
+      "updated_at": "2025-10-26"
+    },
+    {
+      "name": "Katie Dainty, PhD",
+      "email": "katie.dainty@utoronto.ca",
+      "role": "Research Chair in Patient‑Centred Outcomes",
+      "org": "North York General Hospital & University of Toronto",
+      "city": "Toronto",
+      "country": "Canada",
+      "lat": 43.6532,
+      "lng": -79.3832,
+      "interests": "Survivor & family experience; qualitative & mixed methods",
+      "confidence": "High",
+      "tags": [
+        "research",
+        "patient-centred",
+        "qualitative"
+      ],
+      "id": "katie-dainty-phd",
+      "updated_at": "2025-10-26"
+    },
+    {
+      "name": "Freddy Lippert, MD",
+      "email": "freddy.lippert@regionh.dk",
+      "role": "EMS leader; former CEO, EMS Copenhagen",
+      "org": "Capital Region of Denmark / Falck (previous)",
+      "city": "Copenhagen",
+      "country": "Denmark",
+      "lat": 55.6761,
+      "lng": 12.5683,
+      "interests": "OHCA systems of care; dispatch; bystander activation",
+      "confidence": "High",
+      "tags": [
+        "ems",
+        "leadership"
+      ],
+      "id": "freddy-lippert-md",
+      "updated_at": "2025-10-26"
+    },
+    {
+      "name": "Koenraad (Koen) Monsieurs, MD PhD",
+      "email": "koen.monsieurs@rug.ac.be",
+      "role": "Head of Emergency Medicine; Professor",
+      "org": "Antwerp University Hospital (UZA) & University of Antwerp",
+      "city": "Antwerp (Edegem)",
+      "country": "Belgium",
+      "lat": 51.156,
+      "lng": 4.444,
+      "interests": "ERC guidelines; ALS; airway; education",
+      "confidence": "High",
+      "tags": [
+        "emergency medicine",
+        "erc",
+        "professor"
+      ],
+      "id": "koenraad-koen-monsieurs-md-phd",
+      "updated_at": "2025-10-26"
+    },
+    {
+      "name": "Paul Swindell",
+      "email": "paul.swindell@scauk.org",
+      "role": "Founder/Chair; survivor advocate",
+      "org": "Sudden Cardiac Arrest UK",
+      "city": "Essex (approx.)",
+      "country": "United Kingdom",
+      "lat": 51.7356,
+      "lng": 0.4686,
+      "interests": "Peer support; lived experience; public engagement",
+      "confidence": "High (person) / Medium (location)",
+      "tags": [
+        "survivor",
+        "advocacy",
+        "charity"
+      ],
+      "id": "paul-swindell",
+      "updated_at": "2025-10-26"
+    },
+    {
+      "name": "Dave Cleland",
+      "email": "dave.a.cleland@gmail.com",
+      "role": "OHCA survivor; storyteller",
+      "org": "Sudden Cardiac Arrest UK",
+      "city": "Essex (approx.)",
+      "country": "United Kingdom",
+      "lat": 51.7356,
+      "lng": 0.4686,
+      "interests": "Lived experience; survivor advocacy",
+      "confidence": "High (person) / Medium (location)",
+      "tags": [
+        "survivor",
+        "advocacy"
+      ],
+      "id": "dave-cleland",
+      "updated_at": "2025-10-26"
+    },
+    {
+      "name": "Esther Kuku",
+      "email": "Esther.Kuku@resus.org.uk",
+      "role": "Director of Communications & Engagement",
+      "org": "Resuscitation Council UK",
+      "city": "London",
+      "country": "United Kingdom",
+      "lat": 51.5074,
+      "lng": -0.1278,
+      "interests": "Public engagement; partnerships; comms",
+      "confidence": "High",
+      "tags": [
+        "communications",
+        "rcuk"
+      ],
+      "id": "esther-kuku",
+      "updated_at": "2025-10-26"
+    },
+    {
+      "name": "Victoria Wragg, RN",
+      "email": "Victoria.wragg@resus.org.uk",
+      "role": "Clinical Lead",
+      "org": "Resuscitation Council UK",
+      "city": "London",
+      "country": "United Kingdom",
+      "lat": 51.5074,
+      "lng": -0.1278,
+      "interests": "Survivor pathways; quality standards; aftercare",
+      "confidence": "High",
+      "tags": [
+        "nursing",
+        "rcuk",
+        "clinical leadership"
+      ],
+      "id": "victoria-wragg-rn",
+      "updated_at": "2025-10-26"
+    },
+    {
+      "name": "Lorenzo Gamberini, MD",
+      "email": "lorenzo.gamberini@ausl.bologna.it",
+      "role": "Anaesthesia & ICU; Prehospital emergency",
+      "org": "Ospedale Maggiore Carlo Alberto Pizzardi",
+      "city": "Bologna",
+      "country": "Italy",
+      "lat": 44.494887,
+      "lng": 11.342616,
+      "interests": "OHCA; prehospital systems; advanced life support",
+      "confidence": "High",
+      "tags": [
+        "anaesthesia",
+        "prehospital"
+      ],
+      "id": "lorenzo-gamberini-md",
+      "updated_at": "2025-10-26"
+    },
+    {
+      "name": "Bo Gregers Winkel, MD DMSc",
+      "email": "bowinkel@dadlnet.dk",
+      "role": "Consultant cardiologist; Head of Research",
+      "org": "Rigshospitalet / University of Copenhagen",
+      "city": "Copenhagen",
+      "country": "Denmark",
+      "lat": 55.6761,
+      "lng": 12.5683,
+      "interests": "Sudden cardiac death; OHCA outcomes",
+      "confidence": "High",
+      "tags": [
+        "cardiology",
+        "research"
+      ],
+      "id": "bo-gregers-winkel-md-dmsc",
+      "updated_at": "2025-10-26"
+    },
+    {
+      "name": "Guglielmo Imbriaco",
+      "email": "guglielmo.imbriaco.work@gmail.com",
+      "role": "Scientific Committee member",
+      "org": "Italian Resuscitation Council (IRC)",
+      "city": "Bologna (area)",
+      "country": "Italy",
+      "lat": 44.494887,
+      "lng": 11.342616,
+      "interests": "EMS; education; resuscitation science",
+      "confidence": "High (person) / Medium (location)",
+      "tags": [
+        "irc",
+        "education"
+      ],
+      "id": "guglielmo-imbriaco",
+      "updated_at": "2025-10-26"
+    },
+    {
+      "name": "Katarina Heimburg",
+      "email": "Katarina.heimburg@med.lu.se",
+      "role": "Physiotherapist & researcher",
+      "org": "Lund University / Skåne University Hospital",
+      "city": "Lund",
+      "country": "Sweden",
+      "lat": 55.7047,
+      "lng": 13.191,
+      "interests": "Rehabilitation after OHCA; patient‑centred outcomes",
+      "confidence": "High",
+      "tags": [
+        "physiotherapy",
+        "research"
+      ],
+      "id": "katarina-heimburg",
+      "updated_at": "2025-10-26"
+    },
+    {
+      "name": "Nicole Marie Zerafa (likely)",
+      "email": "Nclzerafa@gmail.com",
+      "role": "Instructor; GP trainee; MRC contributor",
+      "org": "Malta Resuscitation Council",
+      "city": "Msida (University area)",
+      "country": "Malta",
+      "lat": 35.8959,
+      "lng": 14.482,
+      "interests": "Resuscitation education; community training",
+      "confidence": "Medium",
+      "tags": [
+        "education",
+        "mrc"
+      ],
+      "id": "nicole-marie-zerafa-likely",
+      "updated_at": "2025-10-26"
+    },
+    {
+      "name": "Kirstie L. Haywood, PhD",
+      "email": "k.l.haywood@warwick.ac.uk",
+      "role": "Professor of Health Outcomes",
+      "org": "Warwick Medical School",
+      "city": "Coventry (Warwick campus)",
+      "country": "United Kingdom",
+      "lat": 52.383,
+      "lng": -1.56,
+      "interests": "PROMs; quality of life; survivorship",
+      "confidence": "High",
+      "tags": [
+        "research",
+        "outcomes",
+        "proms"
+      ],
+      "id": "kirstie-l-haywood-phd",
+      "updated_at": "2025-10-26"
+    },
+    {
+      "name": "Annette Waldemar",
+      "email": "annette.waldemar@liu.se",
+      "role": "Nurse specialist; researcher",
+      "org": "Linköping University / Region Östergötland",
+      "city": "Linköping",
+      "country": "Sweden",
+      "lat": 58.4108,
+      "lng": 15.6214,
+      "interests": "Family‑witnessed resuscitation; survivor needs",
+      "confidence": "High",
+      "tags": [
+        "nursing",
+        "research"
+      ],
+      "id": "annette-waldemar",
+      "updated_at": "2025-10-26"
+    },
+    {
+      "name": "Mette‑Kirstine Wagner",
+      "email": "mette.kirstine.wagner@regionh.dk",
+      "role": "Cardiology; survivorship & mental health",
+      "org": "Rigshospitalet, Capital Region of Denmark",
+      "city": "Copenhagen",
+      "country": "Denmark",
+      "lat": 55.6761,
+      "lng": 12.5683,
+      "interests": "Return‑to‑work; mental health after cardiac arrest",
+      "confidence": "High",
+      "tags": [
+        "cardiology",
+        "survivorship",
+        "mental health"
+      ],
+      "id": "mette-kirstine-wagner",
+      "updated_at": "2025-10-26"
+    },
+    {
+      "name": "Piritta Setälä",
+      "email": "Piritta.setala@pirha.fi",
+      "role": "Assistant Chief Physician (EMS)",
+      "org": "Pirkanmaa Wellbeing Services County",
+      "city": "Tampere",
+      "country": "Finland",
+      "lat": 61.4978,
+      "lng": 23.761,
+      "interests": "Physician‑staffed EMS; systems of care",
+      "confidence": "High",
+      "tags": [
+        "ems",
+        "leadership"
+      ],
+      "id": "piritta-set-l",
+      "updated_at": "2025-10-26"
+    },
+    {
+      "name": "Marta Dembkowska (Przybył), MD",
+      "email": "marta.dembkowska@gmail.com",
+      "role": "Anaesthesiology & Intensive Care; ERC committees",
+      "org": "Jagiellonian University Medical College",
+      "city": "Kraków",
+      "country": "Poland",
+      "lat": 50.0647,
+      "lng": 19.945,
+      "interests": "Anaesthesia; resuscitation education",
+      "confidence": "High (person) / Medium (email link)",
+      "tags": [
+        "anaesthesia",
+        "education",
+        "erc"
+      ],
+      "id": "marta-dembkowska-przyby-md",
+      "updated_at": "2025-10-26"
+    },
+    {
+      "name": "Tomasz Lonc, MD",
+      "email": "tomasz.lonc@uj.edu.pl",
+      "role": "Anaesthesiology & Intensive Therapy",
+      "org": "Jagiellonian University Medical College",
+      "city": "Kraków",
+      "country": "Poland",
+      "lat": 50.0647,
+      "lng": 19.945,
+      "interests": "Regional anaesthesia; ICU outcomes",
+      "confidence": "Medium‑High",
+      "tags": [
+        "anaesthesia",
+        "icu"
+      ],
+      "id": "tomasz-lonc-md",
+      "updated_at": "2025-10-26"
+    },
+    {
+      "name": "Vicky (V. L.) Joshi, PhD",
+      "email": "N/A",
+      "role": "Lecturer in Physiotherapy",
+      "org": "Glasgow Caledonian University",
+      "city": "Glasgow",
+      "country": "United Kingdom",
+      "lat": 55.8642,
+      "lng": -4.2518,
+      "interests": "OHCA survivorship; rehabilitation",
+      "confidence": "High",
+      "tags": [
+        "physiotherapy",
+        "lecturer"
+      ],
+      "id": "vicky-v-l-joshi-phd",
+      "updated_at": "2025-10-26"
+    },
+    {
+      "name": "Cyprus Resuscitation Council (KYSAN)",
+      "email": "info@kysan.org",
+      "role": "National resuscitation council (organisation)",
+      "org": "KYSAN",
+      "city": "Nicosia",
+      "country": "Cyprus",
+      "lat": 35.1856,
+      "lng": 33.3823,
+      "interests": "Training, guidelines implementation, public engagement in Cyprus",
+      "confidence": "High",
+      "tags": [
+        "council",
+        "organisation"
+      ],
+      "id": "cyprus-resuscitation-council-kysan",
+      "updated_at": "2025-10-26"
+    },
+    {
+      "name": "Marco Mion, CPsychol",
+      "email": "m.mion@nhs.net",
+      "role": "Clinical Psychologist & Researcher",
+      "org": "Mid and South Essex NHS FT — Essex Cardiothoracic Centre",
+      "city": "Basildon",
+      "country": "United Kingdom",
+      "lat": 51.5685,
+      "lng": 0.4578,
+      "interests": "OHCA survivorship; neurorehabilitation; feedback systems; digital support (V‑CARE)",
+      "confidence": "High",
+      "tags": [
+        "psychology",
+        "research",
+        "neurorehab"
+      ],
+      "id": "marco-mion-cpsychol",
+      "updated_at": "2025-10-26"
+    },
+    {
+      "name": "Alexander Presciutti",
+      "email": "N/A",
+      "role": "Researcher (resuscitation/behavioural science)",
+      "org": "Harvard Medical School",
+      "city": "Boston",
+      "country": "United States",
+      "lat": 42.3364,
+      "lng": -71.1046,
+      "interests": "Resuscitation science; behavioural & outcomes research (details to confirm)",
+      "confidence": "Medium",
+      "tags": [
+        "research",
+        "behavioural"
+      ],
+      "id": "alexander-presciutti",
+      "updated_at": "2025-10-26"
+    }
+  ]
+}
