@@ -1151,6 +1151,17 @@ const initMap = (people) => {
 
   let entriesWithCoords = buildEntries(people);
 
+  const buildEntries = (list) =>
+    list
+      .filter((person) => Number.isFinite(person.lat) && Number.isFinite(person.lng))
+      .map((person) => ({
+        person,
+        marker: L.marker([person.lat, person.lng], { title: person.name }).bindPopup(createPopupContent(person)),
+        keywords: buildKeywords(person),
+      }));
+
+  let entriesWithCoords = buildEntries(people);
+
   const renderMarkers = (markers) => {
     layerGroup.clearLayers();
     markers.forEach((item) => layerGroup.addLayer(item.marker));
@@ -1325,6 +1336,8 @@ const initialise = async () => {
     applyTranslations(state.language);
   } catch (error) {
     console.error(error);
+    state.dataReady = false;
+    state.pendingLanguage = null;
     if (statusEl) {
       statusEl.textContent = translate("errors.directory");
     }
