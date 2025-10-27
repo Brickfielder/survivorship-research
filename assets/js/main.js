@@ -24,7 +24,7 @@ const translations = {
     mapSection: {
       title: "Global map",
       description:
-        "Explore who is working on survivorship and co‑survivorship around the world. Filter by topic, population and methods.",
+        "Explore who is working on survivorship and co‑survivorship around the world. Filter by name, organization, job role and Country.",
     },
     filters: {
       cognition: "Cognition",
@@ -109,7 +109,6 @@ const translations = {
       updatedSuffix: " (dataset updated {date})",
     },
     card: {
-      confidence: "Confidence",
       updated: "Updated",
     },
     errors: {
@@ -142,7 +141,7 @@ const translations = {
     mapSection: {
       title: "Carte mondiale",
       description:
-        "Découvrez qui travaille sur la survie et la co-survie dans le monde. Filtrez par thème, population et méthodes.",
+        "Découvrez qui travaille sur la survie et la co-survie dans le monde. Filtrez par nom, organisation, rôle et pays.",
     },
     filters: {
       cognition: "Cognition",
@@ -227,7 +226,6 @@ const translations = {
       updatedSuffix: " (jeu de données mis à jour le {date})",
     },
     card: {
-      confidence: "Confiance",
       updated: "Mis à jour",
     },
     errors: {
@@ -260,7 +258,7 @@ const translations = {
     mapSection: {
       title: "Mapa globalna",
       description:
-        "Sprawdź, kto na świecie zajmuje się przeżyciem i współprzeżyciem. Filtrowanie według tematu, populacji i metod.",
+        "Sprawdź, kto na świecie zajmuje się przeżyciem i współprzeżyciem. Filtruj według nazwiska, organizacji, roli i kraju.",
     },
     filters: {
       cognition: "Kognicja",
@@ -345,7 +343,6 @@ const translations = {
       updatedSuffix: " (zbiór danych zaktualizowany {date})",
     },
     card: {
-      confidence: "Zaufanie",
       updated: "Zaktualizowano",
     },
     errors: {
@@ -378,7 +375,7 @@ const translations = {
     mapSection: {
       title: "Παγκόσμιος χάρτης",
       description:
-        "Εξερευνήστε ποιοι εργάζονται για την επιβίωση και τη συνεπιβίωση σε όλον τον κόσμο. Φιλτράρετε ανά θέμα, πληθυσμό και μεθόδους.",
+        "Εξερευνήστε ποιοι εργάζονται για την επιβίωση και τη συνεπιβίωση σε όλον τον κόσμο. Φιλτράρετε ανά όνομα, οργανισμό, ρόλο και χώρα.",
     },
     filters: {
       cognition: "Γνώση",
@@ -463,7 +460,6 @@ const translations = {
       updatedSuffix: " (το σύνολο δεδομένων ενημερώθηκε {date})",
     },
     card: {
-      confidence: "Βεβαιότητα",
       updated: "Ενημερώθηκε",
     },
     errors: {
@@ -496,7 +492,7 @@ const translations = {
     mapSection: {
       title: "Maailmankartta",
       description:
-        "Tutustu siihen, kuka työskentelee selviytymisen ja kanssaselviytymisen parissa eri puolilla maailmaa. Suodata teeman, kohderyhmän ja menetelmien mukaan.",
+        "Tutustu siihen, kuka työskentelee selviytymisen ja kanssaselviytymisen parissa eri puolilla maailmaa. Suodata nimen, organisaation, roolin ja maan mukaan.",
     },
     filters: {
       cognition: "Kognitio",
@@ -581,7 +577,6 @@ const translations = {
       updatedSuffix: " (aineisto päivitetty {date})",
     },
     card: {
-      confidence: "Varmuus",
       updated: "Päivitetty",
     },
     errors: {
@@ -614,7 +609,7 @@ const translations = {
     mapSection: {
       title: "Global karta",
       description:
-        "Utforska vem som arbetar med överlevnad och medöverlevnad runt om i världen. Filtrera efter ämne, målgrupp och metod.",
+        "Utforska vilka som arbetar med överlevnad och medöverlevnad runt om i världen. Filtrera efter namn, organisation, roll och land.",
     },
     filters: {
       cognition: "Kognition",
@@ -699,7 +694,6 @@ const translations = {
       updatedSuffix: " (dataset uppdaterat {date})",
     },
     card: {
-      confidence: "Tillförlitlighet",
       updated: "Uppdaterad",
     },
     errors: {
@@ -732,7 +726,7 @@ const translations = {
     mapSection: {
       title: "Mappa globale",
       description:
-        "Esplora chi lavora sulla sopravvivenza e co-sopravvivenza nel mondo. Filtra per tema, popolazione e metodi.",
+        "Esplora chi lavora sulla sopravvivenza e co-sopravvivenza nel mondo. Filtra per nome, organizzazione, ruolo e paese.",
     },
     filters: {
       cognition: "Cognizione",
@@ -817,11 +811,244 @@ const translations = {
       updatedSuffix: " (dataset aggiornato {date})",
     },
     card: {
-      confidence: "Affidabilità",
       updated: "Aggiornato",
     },
     errors: {
       directory: "Impossibile caricare la directory. Riprova più tardi.",
+    },
+  },
+  da: {
+    title: "Forskning i overlevelse og medoverlevelse – kort og katalog",
+    language: {
+      label: "Sprog",
+      selectorLabel: "Vælg sprog",
+    },
+    brand: {
+      name: "Forskning i overlevelse og medoverlevelse",
+    },
+    nav: {
+      map: "Kort",
+      directory: "Forskere",
+      qa: "Spørgsmål & svar",
+      submit: "Tilføj dig selv",
+    },
+    hero: {
+      heading:
+        "Vi kortlægger menneskerne, der forbedrer livet efter hjertestop",
+      description:
+        "Opdag forskere, klinikere, overlevere og medoverlevere. Find samarbejdspartnere, del idéer og fremskynd forskning og indsatser for overlevere.",
+      viewMap: "Se kortet",
+      addEntry: "Tilføj din post",
+    },
+    mapSection: {
+      title: "Globalt kort",
+      description:
+        "Se hvem der arbejder med overlevelse og medoverlevelse i hele verden. Filtrér efter navn, organisation, jobfunktion og land.",
+    },
+    filters: {
+      cognition: "Kognition",
+      psychologicalSupport: "Psykologisk støtte",
+      qualityOfLife: "Livskvalitet",
+      returnToWork: "Tilbagevenden til arbejde",
+      family: "Familie og medoverlevere",
+      registryAnalyses: "Registeranalyser",
+    },
+    directory: {
+      title: "Forskere & samarbejdspartnere",
+      searchPlaceholder: "Søg efter navn, organisation, tag, land…",
+      searchLabel: "Søg i kataloget",
+      addYourself: "Tilføj dig selv",
+    },
+    ribbon: {
+      title: "Er du aktiv inden for forskning i overlevelse?",
+      description:
+        "Hvis du ikke kan finde dig selv på kortet, så tilføj dine oplysninger nedenfor. Se Spørgsmål & svar for rammer og kilder.",
+    },
+    qa: {
+      title: "Spørgsmål og svar om kortet over overlevelse",
+      intro:
+        "Listen gør ikke krav på at være komplet, og redaktionen kan ikke garantere nøjagtigheden eller aktualiteten af oplysningerne.",
+      items: [
+        {
+          question: "Hvorfor blev kortet over overlevelse skabt?",
+          answer:
+            "For at forbinde overlevere, medoverlevere, klinikere og forskere, der arbejder med livet efter hjertestop uden for hospitalet. Synlighed reducerer dobbeltarbejde, fremskynder samarbejde og understøtter udviklingen af retningslinjer og tjenester.",
+        },
+        {
+          question: "Hvad viser kortet?",
+          answer:
+            "Markører for personer og grupper, der er aktive inden for overlevelse: forskningslaboratorier, kliniske tilbud og organisationer ledet af overlevere. Hver markør linker til en kort profil med navn, rolle, institution, land/region og et resumé på 1–2 sætninger.",
+        },
+        {
+          question: "Hvilket indhold og hvilke kilder bygger kortet på?",
+          answer:
+            "Primært indsendte bidrag, som redaktionen gennemgår, suppleret af offentligt tilgængelig information fra institutionssider, publikationer og konferenceprogrammer. Hver post viser kilden og seneste opdatering.",
+        },
+        {
+          question: "Hvordan kan jeg selv oprette en post på kortet?",
+          answer:
+            "Brug formularen nedenfor, eller indsend en pull request til data/resuscitation-network-people.json. Vi kontrollerer omfang og GDPR-samtykke, publicerer derefter posten og sender en bekræftelse på e-mail. Du kan når som helst bede om ændringer eller sletning.",
+        },
+      ],
+    },
+    form: {
+      title: "Tilføj dig selv til kortet",
+      intro:
+        "Indsend dine oplysninger – formularen sender dem til ohcacare@gmail.com.",
+      name: "Fuldt navn",
+      namePlaceholder: "fx Jane Doe",
+      role: "Jobfunktion",
+      rolePlaceholder: "Klinisk psykolog / Overlever / Forsker",
+      org: "Institution / Gruppe",
+      orgPlaceholder: "fx King's College London",
+      country: "Land / Region",
+      countryPlaceholder: "fx Danmark",
+      summary: "Resumé på 1–2 sætninger",
+      summaryPlaceholder:
+        "Jeg undersøger langsigtede kognitive udfald og familiecentreret efterbehandling…",
+      email: "E-mail (vises ikke offentligt; bruges til bekræftelse)",
+      emailPlaceholder: "dig@example.org",
+      links: "Links (valgfrit)",
+      linksPlaceholder: "ORCID, hjemmesiden, LinkedIn…",
+      consent:
+        "Jeg giver samtykke til at offentliggøre min post på kortet og forstår, at jeg til enhver tid kan anmode om ændringer eller sletning.",
+      submit: "Send",
+    },
+    footer: {
+      notice:
+        "© {year} Netværket for forskning i overlevelse og medoverlevelse — Indhold CC BY 4.0, medmindre andet er angivet.",
+      data:
+        "Dataoplysning: poster offentliggøres med samtykke; anmodninger om ændring eller sletning imødekommes. Kontakt: {emailLink}",
+    },
+    status: {
+      none: "Ingen poster er tilgængelige endnu.",
+      all: "Viser alle {total} personer{query}{updated}.",
+      partial: "Viser {visible} af {total} personer{query}{updated}.",
+      querySuffix: " for “{query}”",
+      updatedSuffix: " (datasættet opdateret {date})",
+    },
+    card: {
+      updated: "Opdateret",
+    },
+    errors: {
+      directory: "Kataloget kunne ikke indlæses. Prøv igen senere.",
+    },
+  },
+  mt: {
+    title: "Riċerka dwar is-superstiti u s-superstiti flimkien – mapa u direttorju",
+    language: {
+      label: "Lingwa",
+      selectorLabel: "Agħżel lingwa",
+    },
+    brand: {
+      name: "Riċerka dwar is-superstiti u s-superstiti flimkien",
+    },
+    nav: {
+      map: "Mappa",
+      directory: "Riċerkaturi",
+      qa: "Mistoqsijiet u Tweġibiet",
+      submit: "Żid lilek innifsek",
+    },
+    hero: {
+      heading:
+        "Qed nimmappjaw in-nies li jtejbu l-ħajja wara arrest kardijaku",
+      description:
+        "Skopri riċerkaturi, kliniċisti, superstiti u qraba. Sib kollaboraturi, aqsam ideat u iġġib 'il quddiem ix-xjenza u s-servizzi għas-superstiti.",
+      viewMap: "Ara l-mappa",
+      addEntry: "Żid l-entrata tiegħek",
+    },
+    mapSection: {
+      title: "Mappa globali",
+      description:
+        "Esplora min qed jaħdem fuq is-superstiti u s-superstiti flimkien madwar id-dinja. Iffiltra skont isem, organizzazzjoni, rwol tax-xogħol u pajjiż.",
+    },
+    filters: {
+      cognition: "Konoxxenza",
+      psychologicalSupport: "Appoġġ psikoloġiku",
+      qualityOfLife: "Kwalità tal-ħajja",
+      returnToWork: "Ritorn għax-xogħol",
+      family: "Familja u qraba superstiti",
+      registryAnalyses: "Analiżi tar-reġistri",
+    },
+    directory: {
+      title: "Riċerkaturi u kollaboraturi",
+      searchPlaceholder: "Fittex b'isem, organizzazzjoni, tikketta, pajjiż…",
+      searchLabel: "Fittex fid-direttorju",
+      addYourself: "Żid lilek innifsek",
+    },
+    ribbon: {
+      title: "Int attiv fir-riċerka tas-superstiti?",
+      description:
+        "Jekk ma ssibx lilek innifsek fuq il-mappa, żid id-dettalji tiegħek hawn taħt. Ara l-Mistoqsijiet u Tweġibiet għall-ambitu u s-sorsi.",
+    },
+    qa: {
+      title: "Mistoqsijiet u tweġibiet dwar il-mappa tas-superstiti",
+      intro:
+        "Din il-lista ma tippretendix li hija kompluta u l-edituri ma jistgħux jiggarantixxu l-eżattezza jew l-aġġornament tal-informazzjoni.",
+      items: [
+        {
+          question: "Għaliex inħolqot il-mappa tas-superstiti?",
+          answer:
+            "Biex tgħaqqad superstiti, qraba, kliniċisti u riċerkaturi li jaħdmu fuq il-ħajja wara OHCA. Viżibilità tnaqqas id-duplikazzjoni, tħaffef il-kollaborazzjoni u tappoġġja l-iżvilupp ta' linji gwida u servizzi.",
+        },
+        {
+          question: "X'turi l-mappa?",
+          answer:
+            "Punti għal nies u gruppi attivi fil-qasam tas-superstiti: laboratorji ta' riċerka, servizzi kliniċi u organizzazzjonijiet immexxija mis-superstiti. Kull punt jorbot ma' profil qasir b'isem, rwol, istituzzjoni, pajjiż/reġjun u sommarju f'1–2 sentenzi.",
+        },
+        {
+          question: "X'kontenut u sorsi jintużaw għall-mappa?",
+          answer:
+            "Prinċipalment sottomissjonijiet direttament min-nies u riveduti mill-edituri, flimkien ma' informazzjoni pubblikament disponibbli minn paġni istituzzjonali, pubblikazzjonijiet u programmi ta' konferenzi. Kull entrata turi s-sors u l-aħħar aġġornament.",
+        },
+        {
+          question: "Kif nista' nżid entrata tiegħi fuq il-mappa?",
+          answer:
+            "Uża l-formola hawn taħt jew issottometti pull request għal data/resuscitation-network-people.json. Niċċekkjaw l-ambitu u l-kunsens GDPR, imbagħad nippubblikaw u nibagħtu konferma bl-email. Tista' titlob bidliet jew tneħħija fi kwalunkwe ħin.",
+        },
+      ],
+    },
+    form: {
+      title: "Żid lilek innifsek mal-mappa",
+      intro:
+        "Ibgħat id-dettalji tiegħek u l-formola tibgħathom lil ohcacare@gmail.com.",
+      name: "Isem sħiħ",
+      namePlaceholder: "eż. Jane Doe",
+      role: "Rwol",
+      rolePlaceholder: "Psikolog kliniku / Superstiti / Riċerkatur",
+      org: "Istituzzjoni / Grupp",
+      orgPlaceholder: "eż. King's College London",
+      country: "Pajjiż / Reġjun",
+      countryPlaceholder: "eż. Malta",
+      summary: "Sommarju ta' 1–2 sentenzi",
+      summaryPlaceholder:
+        "Nistudja riżultati konjittivi fit-tul u kura ċċentrata fuq il-familja…",
+      email: "Email (miżmuma privata; tintuża għall-konferma)",
+      emailPlaceholder: "int@example.org",
+      links: "Links (mhux obbligatorju)",
+      linksPlaceholder: "ORCID, paġna tal-laboratorju, LinkedIn…",
+      consent:
+        "Nikkonsenja għall-pubblikazzjoni tad-dħul tiegħi fuq il-mappa u nifhem li nista' nitlob bidliet jew tħassir fi kwalunkwe ħin.",
+      submit: "Ibgħat",
+    },
+    footer: {
+      notice:
+        "© {year} Network għar-riċerka tas-superstiti u s-superstiti flimkien — Kontenut CC BY 4.0 sakemm ma jingħadx mod ieħor.",
+      data:
+        "Nota tad-data: id-dħul jiġi ppubblikat b'kunsens; talbiet għal bidla jew tħassir jiġu onorati. Kuntatt: {emailLink}",
+    },
+    status: {
+      none: "Għad m'hemmx entrati disponibbli.",
+      all: "Qed jintwerew il-{total} persuni kollha{query}{updated}.",
+      partial: "Qed jintwerew {visible} minn {total} persuni{query}{updated}.",
+      querySuffix: " għal “{query}”",
+      updatedSuffix: " (is-sett tad-data aġġornat {date})",
+    },
+    card: {
+      updated: "Aġġornat",
+    },
+    errors: {
+      directory: "Ma stajniex nilloadjaw id-direttorju. Erġa' pprova aktar tard.",
     },
   },
 };
@@ -954,7 +1181,6 @@ const buildKeywords = (person) =>
     person.city,
     person.country,
     person.interests,
-    person.confidence,
     Array.isArray(person.tags) ? person.tags.join(" ") : person.tags,
   ]
     .filter(Boolean)
@@ -1011,9 +1237,6 @@ const createCard = (person) => {
   }
 
   const footnoteParts = [];
-  if (person.confidence) {
-    footnoteParts.push(`${translate("card.confidence")}: ${person.confidence}`);
-  }
   const formattedUpdatedAt = formatDate(person.updated_at);
   if (formattedUpdatedAt) {
     footnoteParts.push(`${translate("card.updated")} ${formattedUpdatedAt}`);
