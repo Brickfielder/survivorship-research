@@ -75,7 +75,7 @@ const translations = {
     form: {
       title: "Add yourself to the map",
       intro:
-        "This demo form doesn’t submit anywhere. Wire it to your backend, Airtable or Netlify Forms.",
+        "Submit your details and the form will email them to ohcacare@gmail.com.",
       name: "Full name",
       namePlaceholder: "e.g., Jane Doe",
       role: "Role",
@@ -93,9 +93,7 @@ const translations = {
       linksPlaceholder: "ORCID, Lab page, LinkedIn…",
       consent:
         "I consent to the publication of my entry on the map and understand I can request edits or deletion at any time.",
-      submit: "Submit (demo)",
-      update: "Update an existing entry",
-      demoSubmit: "Submitted (demo).",
+      submit: "Submit",
     },
     footer: {
       notice:
@@ -195,7 +193,7 @@ const translations = {
     form: {
       title: "Ajoutez-vous à la carte",
       intro:
-        "Ce formulaire de démonstration n'envoie rien. Connectez-le à votre backend, Airtable ou Netlify Forms.",
+        "Envoyez vos informations ; le formulaire les adressera à ohcacare@gmail.com.",
       name: "Nom complet",
       namePlaceholder: "ex. Jane Doe",
       role: "Rôle",
@@ -213,9 +211,7 @@ const translations = {
       linksPlaceholder: "ORCID, page du laboratoire, LinkedIn…",
       consent:
         "Je consens à la publication de mon entrée sur la carte et comprends que je peux demander des modifications ou une suppression à tout moment.",
-      submit: "Envoyer (démo)",
-      update: "Mettre à jour une entrée existante",
-      demoSubmit: "Envoyé (démo).",
+      submit: "Envoyer",
     },
     footer: {
       notice:
@@ -315,7 +311,7 @@ const translations = {
     form: {
       title: "Dodaj się do mapy",
       intro:
-        "Ten formularz demonstracyjny niczego nie wysyła. Połącz go ze swoim backendem, Airtable lub Netlify Forms.",
+        "Prześlij swoje dane – formularz wyśle je na adres ohcacare@gmail.com.",
       name: "Imię i nazwisko",
       namePlaceholder: "np. Janina Kowalska",
       role: "Rola",
@@ -333,9 +329,7 @@ const translations = {
       linksPlaceholder: "ORCID, strona zespołu, LinkedIn…",
       consent:
         "Wyrażam zgodę na opublikowanie mojego wpisu na mapie i rozumiem, że mogę w każdej chwili poprosić o zmiany lub usunięcie.",
-      submit: "Wyślij (demo)",
-      update: "Zaktualizuj istniejący wpis",
-      demoSubmit: "Wysłano (demo).",
+      submit: "Wyślij",
     },
     footer: {
       notice:
@@ -435,7 +429,7 @@ const translations = {
     form: {
       title: "Προσθέστε τον εαυτό σας στον χάρτη",
       intro:
-        "Αυτή η δοκιμαστική φόρμα δεν υποβάλλει δεδομένα. Συνδέστε την με το backend σας, το Airtable ή το Netlify Forms.",
+        "Υποβάλετε τα στοιχεία σας· η φόρμα θα τα αποστείλει στο ohcacare@gmail.com.",
       name: "Ονοματεπώνυμο",
       namePlaceholder: "π.χ. Μαρία Παπαδοπούλου",
       role: "Ρόλος",
@@ -453,9 +447,7 @@ const translations = {
       linksPlaceholder: "ORCID, σελίδα εργαστηρίου, LinkedIn…",
       consent:
         "Συναινώ στη δημοσίευση της καταχώρισής μου στον χάρτη και κατανοώ ότι μπορώ να ζητήσω αλλαγές ή διαγραφή οποιαδήποτε στιγμή.",
-      submit: "Υποβολή (δοκιμή)",
-      update: "Ενημέρωση υπάρχουσας καταχώρισης",
-      demoSubmit: "Υποβλήθηκε (δοκιμή).",
+      submit: "Υποβολή",
     },
     footer: {
       notice:
@@ -555,7 +547,7 @@ const translations = {
     form: {
       title: "Lisää itsesi kartalle",
       intro:
-        "Tämä demolomake ei lähetä tietoja. Kytke se taustajärjestelmääsi, Airtableen tai Netlify Formsiin.",
+        "Lähetä tietosi – lomake toimittaa ne osoitteeseen ohcacare@gmail.com.",
       name: "Koko nimi",
       namePlaceholder: "esim. Maija Meikäläinen",
       role: "Rooli",
@@ -573,9 +565,7 @@ const translations = {
       linksPlaceholder: "ORCID, tutkimussivusto, LinkedIn…",
       consent:
         "Annan suostumukseni tietojeni julkaisemiseen kartalla ja ymmärrän, että voin pyytää muutoksia tai poistamista milloin tahansa.",
-      submit: "Lähetä (demo)",
-      update: "Päivitä olemassa oleva merkintä",
-      demoSubmit: "Lähetetty (demo).",
+      submit: "Lähetä",
     },
     footer: {
       notice:
@@ -675,7 +665,7 @@ const translations = {
     form: {
       title: "Lägg till dig på kartan",
       intro:
-        "Det här demot formuläret skickar inget. Koppla det till din backend, Airtable eller Netlify Forms.",
+        "Skicka in dina uppgifter – formuläret skickar dem till ohcacare@gmail.com.",
       name: "Fullständigt namn",
       namePlaceholder: "t.ex. Anna Andersson",
       role: "Roll",
@@ -693,9 +683,7 @@ const translations = {
       linksPlaceholder: "ORCID, labsida, LinkedIn…",
       consent:
         "Jag samtycker till att min post publiceras på kartan och förstår att jag kan begära ändringar eller radering när som helst.",
-      submit: "Skicka (demo)",
-      update: "Uppdatera en befintlig post",
-      demoSubmit: "Skickat (demo).",
+      submit: "Skicka",
     },
     footer: {
       notice:
@@ -795,7 +783,7 @@ const translations = {
     form: {
       title: "Aggiungiti alla mappa",
       intro:
-        "Questo modulo dimostrativo non invia dati. Collegalo al tuo backend, ad Airtable o a Netlify Forms.",
+        "Invia i tuoi dati: il modulo li inoltrerà a ohcacare@gmail.com.",
       name: "Nome e cognome",
       namePlaceholder: "es. Maria Rossi",
       role: "Ruolo",
@@ -813,9 +801,7 @@ const translations = {
       linksPlaceholder: "ORCID, pagina del laboratorio, LinkedIn…",
       consent:
         "Acconsento alla pubblicazione della mia scheda sulla mappa e comprendo che posso richiedere modifiche o cancellazione in qualsiasi momento.",
-      submit: "Invia (demo)",
-      update: "Aggiorna una scheda esistente",
-      demoSubmit: "Inviato (demo).",
+      submit: "Invia",
     },
     footer: {
       notice:
@@ -1271,7 +1257,7 @@ const applyTranslations = (lang) => {
     const key = el.dataset.i18nHtml;
     if (!key) return;
     if (key === "footer.data") {
-      const email = el.dataset.email ?? "info@example.org";
+      const email = el.dataset.email ?? "ohcacare@gmail.com";
       const emailLink = `<a href="mailto:${email}" style="color:#fff; text-underline-offset:2px;">${email}</a>`;
       el.innerHTML = translate(key, { email, emailLink });
     } else {
@@ -1348,13 +1334,6 @@ if (searchInput) {
 
 if (languageSelect) {
   languageSelect.addEventListener("change", (event) => applyTranslations(event.target.value));
-}
-
-if (formEl) {
-  formEl.addEventListener("submit", (event) => {
-    event.preventDefault();
-    alert(translate("form.demoSubmit"));
-  });
 }
 
 applyTranslations(state.language);

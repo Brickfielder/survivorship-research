@@ -495,6 +495,25 @@
       ],
       "id": "alexander-presciutti",
       "updated_at": "2025-10-26"
+    },
+    {
+      "name": "Marine Paul",
+      "email": "N/A",
+      "role": "Intensive care physician; co-founder of the association La vie après un arrêt cardiaque",
+      "org": "Centre Hospitalier de Versailles",
+      "city": "Le Chesnay",
+      "country": "France",
+      "lat": 48.8245,
+      "lng": 2.1226,
+      "interests": "Post–cardiac arrest intensive care; survivor and co-survivor support; community advocacy",
+      "confidence": "High",
+      "tags": [
+        "intensive care",
+        "advocacy",
+        "survivorship"
+      ],
+      "id": "marine-paul",
+      "updated_at": "2025-10-26"
     }
   ],
   "locales": {
@@ -707,6 +726,14 @@
           "country": "États-Unis",
           "interests": "Science de la réanimation; recherche comportementale et sur les résultats (à confirmer)",
           "confidence": "Moyen"
+        },
+        "marine-paul": {
+          "role": "Médecin en réanimation; cofondatrice de l’association La vie après un arrêt cardiaque",
+          "org": "Centre Hospitalier de Versailles",
+          "city": "Le Chesnay",
+          "country": "France",
+          "interests": "Prise en charge post-arrêt cardiaque; soutien des survivants et proches; plaidoyer communautaire",
+          "confidence": "Élevé"
         }
       }
     },
@@ -919,6 +946,14 @@
           "country": "Stany Zjednoczone",
           "interests": "Nauka o resuscytacji; badania behawioralne i wynikowe (do potwierdzenia)",
           "confidence": "Średnia"
+        },
+        "marine-paul": {
+          "role": "Lekarka intensywnej terapii; współzałożycielka stowarzyszenia La vie après un arrêt cardiaque",
+          "org": "Centre Hospitalier de Versailles",
+          "city": "Le Chesnay",
+          "country": "Francja",
+          "interests": "Opieka intensywna po NZK; wsparcie ocalałych i bliskich; rzecznictwo społeczności",
+          "confidence": "Wysoka"
         }
       }
     },
@@ -1131,6 +1166,14 @@
           "country": "Ηνωμένες Πολιτείες",
           "interests": "Επιστήμη αναζωογόνησης; συμπεριφορική και αποτελεσματική έρευνα (προς επιβεβαίωση)",
           "confidence": "Μεσαία"
+        },
+        "marine-paul": {
+          "role": "Ιατρός ΜΕΘ; συνιδρύτρια του συλλόγου La vie après un arrêt cardiaque",
+          "org": "Centre Hospitalier de Versailles",
+          "city": "Le Chesnay",
+          "country": "Γαλλία",
+          "interests": "Εντατική φροντίδα μετά από ανακοπή; υποστήριξη επιζώντων και συνοδών; κοινοτική συνηγορία",
+          "confidence": "Υψηλή"
         }
       }
     },
@@ -1343,6 +1386,14 @@
           "country": "Yhdysvallat",
           "interests": "Elvytyksen tiede; käyttäytymis- ja tulostutkimus (vahvistetaan)",
           "confidence": "Keskitaso"
+        },
+        "marine-paul": {
+          "role": "Tehohoitolääkäri; yhdistyksen La vie après un arrêt cardiaque toinen perustaja",
+          "org": "Centre Hospitalier de Versailles",
+          "city": "Le Chesnay",
+          "country": "Ranska",
+          "interests": "Tehohoito sydänpysähdyksen jälkeen; selviytyjien ja läheisten tuki; yhteisövaikuttaminen",
+          "confidence": "Korkea"
         }
       }
     },
@@ -1555,6 +1606,14 @@
           "country": "USA",
           "interests": "Återupplivningsvetenskap; beteende- och utfallsforskning (att bekräfta)",
           "confidence": "Medel"
+        },
+        "marine-paul": {
+          "role": "Läkare i intensivvård; medgrundare av föreningen La vie après un arrêt cardiaque",
+          "org": "Centre Hospitalier de Versailles",
+          "city": "Le Chesnay",
+          "country": "Frankrike",
+          "interests": "Intensivvård efter hjärtstopp; stöd till överlevare och närstående; opinionsbildning i samhället",
+          "confidence": "Hög"
         }
       }
     },
@@ -1767,6 +1826,14 @@
           "country": "Stati Uniti",
           "interests": "Scienza della rianimazione; ricerca comportamentale e sugli esiti (da confermare)",
           "confidence": "Media"
+        },
+        "marine-paul": {
+          "role": "Medico di terapia intensiva; cofondatrice dell’associazione La vie après un arrêt cardiaque",
+          "org": "Centre Hospitalier de Versailles",
+          "city": "Le Chesnay",
+          "country": "Francia",
+          "interests": "Terapia intensiva post arresto cardiaco; supporto a sopravvissuti e familiari; advocacy comunitaria",
+          "confidence": "Alta"
         }
       }
     }
