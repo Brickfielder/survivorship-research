@@ -279,7 +279,7 @@
       "updated_at": "2025-10-26"
     },
     {
-      "name": "Nicole Marie Zerafa (likely)",
+      "name": "Nicole Marie Zerafa",
       "email": "Nclzerafa@gmail.com",
       "role": "Instructor; GP trainee; MRC contributor",
       "org": "Malta Resuscitation Council",
@@ -292,7 +292,42 @@
         "education",
         "mrc"
       ],
-      "id": "nicole-marie-zerafa-likely",
+      "id": "nicole-marie-zerafa",
+      "updated_at": "2025-10-26"
+    },
+    {
+      "name": "Marius Caruana",
+      "email": "mymrc.resusmalta@gmail.com",
+      "role": "GP; Co-Chair Malta Resuscitation Council",
+      "org": "Malta Resuscitation Council",
+      "city": "Msida (University area)",
+      "country": "Malta",
+      "lat": 35.8959,
+      "lng": 14.482,
+      "interests": "Developing a long-term framework supporting cardiac arrest survivors and rescuers",
+      "tags": [
+        "leadership",
+        "mrc"
+      ],
+      "id": "marius-caruana",
+      "updated_at": "2025-10-26"
+    },
+    {
+      "name": "Marylin Gauci",
+      "email": "recovery.resusmalta@gmail.com",
+      "role": "Cardiac Rehabilitation Nurse",
+      "org": "Malta Resuscitation Council",
+      "city": "Msida (University area)",
+      "country": "Malta",
+      "lat": 35.8959,
+      "lng": 14.482,
+      "interests": "Building long-term recovery pathways for cardiac arrest survivors and rescuers",
+      "tags": [
+        "nursing",
+        "rehabilitation",
+        "mrc"
+      ],
+      "id": "marylin-gauci",
       "updated_at": "2025-10-26"
     },
     {
@@ -596,12 +631,26 @@
           "country": "Suède",
           "interests": "Rééducation après ACR; résultats centrés sur les patient·e·s"
         },
-        "nicole-marie-zerafa-likely": {
+        "nicole-marie-zerafa": {
           "role": "Instructrice; médecin généraliste en formation; contributrice du MRC",
           "org": "Conseil de réanimation de Malte",
           "city": "Msida (campus universitaire)",
           "country": "Malte",
           "interests": "Formation en réanimation; formation communautaire"
+        },
+        "marius-caruana": {
+          "role": "Médecin généraliste; co-président du Malta Resuscitation Council",
+          "org": "Conseil de réanimation de Malte",
+          "city": "Msida (campus universitaire)",
+          "country": "Malte",
+          "interests": "Développer un cadre à long terme pour soutenir les survivant·e·s d'arrêt cardiaque et les sauveteurs"
+        },
+        "marylin-gauci": {
+          "role": "Infirmière en réadaptation cardiaque",
+          "org": "Conseil de réanimation de Malte",
+          "city": "Msida (campus universitaire)",
+          "country": "Malte",
+          "interests": "Construire des parcours de rétablissement à long terme pour les survivant·e·s d'arrêt cardiaque et les secouristes"
         },
         "kirstie-l-haywood-phd": {
           "role": "Professeure des résultats de santé",
@@ -789,12 +838,26 @@
           "country": "Szwecja",
           "interests": "Rehabilitacja po NZK; wyniki zorientowane na pacjenta"
         },
-        "nicole-marie-zerafa-likely": {
+        "nicole-marie-zerafa": {
           "role": "Instruktorka; rezydentka medycyny rodzinnej; współpracowniczka MRC",
           "org": "Malta Resuscitation Council",
           "city": "Msida (kampus uniwersytecki)",
           "country": "Malta",
           "interests": "Edukacja resuscytacyjna; szkolenia społeczności"
+        },
+        "marius-caruana": {
+          "role": "Lekarz rodzinny; współprzewodniczący Malta Resuscitation Council",
+          "org": "Malta Resuscitation Council",
+          "city": "Msida (kampus uniwersytecki)",
+          "country": "Malta",
+          "interests": "Tworzenie długoterminowych ram wspierających osoby po zatrzymaniu krążenia i ratowników"
+        },
+        "marylin-gauci": {
+          "role": "Pielęgniarka rehabilitacji kardiologicznej",
+          "org": "Malta Resuscitation Council",
+          "city": "Msida (kampus uniwersytecki)",
+          "country": "Malta",
+          "interests": "Budowanie długoterminowych ścieżek powrotu do zdrowia dla osób po zatrzymaniu krążenia i ratowników"
         },
         "kirstie-l-haywood-phd": {
           "role": "Profesor wyników zdrowotnych",
@@ -982,12 +1045,26 @@
           "country": "Σουηδία",
           "interests": "Αποκατάσταση μετά από ΚΑΑ; αποτελέσματα με επίκεντρο τον ασθενή"
         },
-        "nicole-marie-zerafa-likely": {
+        "nicole-marie-zerafa": {
           "role": "Εκπαιδεύτρια; ειδικευόμενη γενικής ιατρικής; συνεργάτιδα MRC",
           "org": "Συμβούλιο Αναζωογόνησης Μάλτας",
           "city": "Μσίντα (πανεπιστημιούπολη)",
           "country": "Μάλτα",
           "interests": "Εκπαίδευση στην αναζωογόνηση; κοινοτική κατάρτιση"
+        },
+        "marius-caruana": {
+          "role": "Γενικός ιατρός; συμπρόεδρος του Malta Resuscitation Council",
+          "org": "Συμβούλιο Αναζωογόνησης Μάλτας",
+          "city": "Μσίντα (πανεπιστημιούπολη)",
+          "country": "Μάλτα",
+          "interests": "Ανάπτυξη μακροπρόθεσμου πλαισίου στήριξης επιζώντων καρδιακής ανακοπής και διασωστών"
+        },
+        "marylin-gauci": {
+          "role": "Νοσηλεύτρια καρδιακής αποκατάστασης",
+          "org": "Συμβούλιο Αναζωογόνησης Μάλτας",
+          "city": "Μσίντα (πανεπιστημιούπολη)",
+          "country": "Μάλτα",
+          "interests": "Δημιουργία μακροπρόθεσμων διαδρομών αποκατάστασης για επιζώντες καρδιακής ανακοπής και διασώστες"
         },
         "kirstie-l-haywood-phd": {
           "role": "Καθηγήτρια αποτελεσμάτων υγείας",
@@ -1175,12 +1252,26 @@
           "country": "Ruotsi",
           "interests": "Kuntoutus OHCA:n jälkeen; potilaskeskeiset tulokset"
         },
-        "nicole-marie-zerafa-likely": {
+        "nicole-marie-zerafa": {
           "role": "Kouluttaja; yleislääkärikoulutettava; MRC:n yhteistyökumppani",
           "org": "Malta Resuscitation Council",
           "city": "Msida (yliopistoalue)",
           "country": "Malta",
           "interests": "Elvytyskoulutus; yhteisövalmennus"
+        },
+        "marius-caruana": {
+          "role": "Yleislääkäri; Malta Resuscitation Councilin yhteispuheenjohtaja",
+          "org": "Malta Resuscitation Council",
+          "city": "Msida (yliopistoalue)",
+          "country": "Malta",
+          "interests": "Pitkän aikavälin tukikehikon kehittäminen sydänpysähdyksestä selviytyjille ja auttajille"
+        },
+        "marylin-gauci": {
+          "role": "Sydänkuntoutushoitaja",
+          "org": "Malta Resuscitation Council",
+          "city": "Msida (yliopistoalue)",
+          "country": "Malta",
+          "interests": "Pitkäkestoisten toipumispolkujen rakentaminen sydänpysähdyksestä selviytyjille ja auttajille"
         },
         "kirstie-l-haywood-phd": {
           "role": "Terveystulosten professori",
@@ -1368,12 +1459,26 @@
           "country": "Sverige",
           "interests": "Rehabilitering efter hjärtstopp; patientcentrerade utfall"
         },
-        "nicole-marie-zerafa-likely": {
+        "nicole-marie-zerafa": {
           "role": "Instruktör; AT-läkare; medverkande i MRC",
           "org": "Malta Resuscitation Council",
           "city": "Msida (universitetsområdet)",
           "country": "Malta",
           "interests": "Återupplivningsutbildning; utbildning i samhället"
+        },
+        "marius-caruana": {
+          "role": "Allmänläkare; medordförande för Malta Resuscitation Council",
+          "org": "Malta Resuscitation Council",
+          "city": "Msida (universitetsområdet)",
+          "country": "Malta",
+          "interests": "Utvecklar långsiktiga ramar som stödjer hjärtstoppöverlevare och livräddare"
+        },
+        "marylin-gauci": {
+          "role": "Sjuksköterska inom hjärtrehabilitering",
+          "org": "Malta Resuscitation Council",
+          "city": "Msida (universitetsområdet)",
+          "country": "Malta",
+          "interests": "Bygger långsiktiga återhämtningsvägar för hjärtstoppöverlevare och livräddare"
         },
         "kirstie-l-haywood-phd": {
           "role": "Professor i hälsoutfall",
@@ -1561,12 +1666,26 @@
           "country": "Svezia",
           "interests": "Riabilitazione dopo OHCA; esiti centrati sul paziente"
         },
-        "nicole-marie-zerafa-likely": {
+        "nicole-marie-zerafa": {
           "role": "Istruttrice; specializzanda in medicina generale; collaboratrice MRC",
           "org": "Malta Resuscitation Council",
           "city": "Msida (area universitaria)",
           "country": "Malta",
           "interests": "Formazione alla rianimazione; training comunitario"
+        },
+        "marius-caruana": {
+          "role": "Medico di medicina generale; co-presidente del Malta Resuscitation Council",
+          "org": "Malta Resuscitation Council",
+          "city": "Msida (area universitaria)",
+          "country": "Malta",
+          "interests": "Sviluppo di un quadro di supporto a lungo termine per sopravvissuti e soccorritori dopo arresto cardiaco"
+        },
+        "marylin-gauci": {
+          "role": "Infermiera di riabilitazione cardiaca",
+          "org": "Malta Resuscitation Council",
+          "city": "Msida (area universitaria)",
+          "country": "Malta",
+          "interests": "Costruire percorsi di recupero a lungo termine per sopravvissuti e soccorritori dopo arresto cardiaco"
         },
         "kirstie-l-haywood-phd": {
           "role": "Professoressa di esiti di salute",
@@ -1754,12 +1873,26 @@
           "country": "Sverige",
           "interests": "Rehabilitering efter OHCA; patientcentrerede resultater"
         },
-        "nicole-marie-zerafa-likely": {
+        "nicole-marie-zerafa": {
           "role": "Instruktør; praktiserende læge under uddannelse; bidragyder til MRC",
           "org": "Malta Resuscitation Council",
           "city": "Msida (universitetsområdet)",
           "country": "Malta",
           "interests": "Genoplivningsundervisning; træning i lokalsamfundet"
+        },
+        "marius-caruana": {
+          "role": "Almen praktiserende læge; medformand for Malta Resuscitation Council",
+          "org": "Malta Resuscitation Council",
+          "city": "Msida (universitetsområdet)",
+          "country": "Malta",
+          "interests": "Udvikle en langsigtet ramme til at støtte overlevere efter hjertestop og reddere"
+        },
+        "marylin-gauci": {
+          "role": "Sygeplejerske i hjerterehabilitering",
+          "org": "Malta Resuscitation Council",
+          "city": "Msida (universitetsområdet)",
+          "country": "Malta",
+          "interests": "Opbygger langsigtede rehabiliteringsforløb for hjertestopoverlevere og reddere"
         },
         "kirstie-l-haywood-phd": {
           "role": "Professor i sundhedsresultater",
@@ -1947,12 +2080,26 @@
           "country": "Żvezja",
           "interests": "Rijabilitazzjoni wara OHCA; riżultati ċċentrati fuq il-pazjent"
         },
-        "nicole-marie-zerafa-likely": {
+        "nicole-marie-zerafa": {
           "role": "Istrutturi; GP fil-formazzjoni; kontributur tal-MRC",
           "org": "Malta Resuscitation Council",
           "city": "Msida (żona universitarja)",
           "country": "Malta",
           "interests": "Edukazzjoni dwar ir-resusċitazzjoni; taħriġ fil-komunità"
+        },
+        "marius-caruana": {
+          "role": "Tabib tal-familja; ko-president tal-Malta Resuscitation Council",
+          "org": "Malta Resuscitation Council",
+          "city": "Msida (żona universitarja)",
+          "country": "Malta",
+          "interests": "Żvilupp ta’ qafas fit-tul biex jappoġġja lil superstiti ta’ arrest kardijaku u lis-salvaturi"
+        },
+        "marylin-gauci": {
+          "role": "Infermier tal-kardjorehabilitazzjoni",
+          "org": "Malta Resuscitation Council",
+          "city": "Msida (żona universitarja)",
+          "country": "Malta",
+          "interests": "Bini ta’ rotot ta’ rkupru fit-tul għal superstiti ta’ arrest kardijaku u salvaturi"
         },
         "kirstie-l-haywood-phd": {
           "role": "Professur tar-riżultati tas-saħħa",
