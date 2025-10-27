@@ -1646,6 +1646,392 @@
           "interests": "Terapia intensiva post arresto cardiaco; supporto a sopravvissuti e familiari; advocacy comunitaria"
         }
       }
+    },
+    "da": {
+      "people": {
+        "stefan-jutterdal": {
+          "role": "Fysioterapeut; fortaler for patienter/overlevere",
+          "org": "Sverige (Kalmar-regionen)",
+          "city": "Kalmar",
+          "country": "Sverige",
+          "interests": "Personcentreret rehabilitering; patientfortalervirksomhed efter hjertestop"
+        },
+        "johan-israelsson-rn-phd": {
+          "role": "Intensivsygeplejerske og forsker",
+          "org": "Kalmar länssjukhus / Linnéuniversitetet",
+          "city": "Kalmar",
+          "country": "Sverige",
+          "interests": "Opfølgning efter OHCA; livskvalitet; psykologiske resultater"
+        },
+        "aymeric-lejeune": {
+          "role": "Netværks-/programleder",
+          "org": "European Resuscitation Council (ERC)",
+          "city": "Antwerpen",
+          "country": "Belgien",
+          "interests": "Uddannelsesnetværk; kurser; ERC-drift"
+        },
+        "federico-semeraro-md": {
+          "role": "Præsident; anæstesi og intensiv; præhospital beredskab",
+          "org": "European Resuscitation Council; Ospedale Maggiore Bologna",
+          "city": "Bologna",
+          "country": "Italien",
+          "interests": "Genoplivningsundervisning; retningslinjer; hjertelungeredning ved vidner"
+        },
+        "katie-dainty-phd": {
+          "role": "Forskningsleder i patientcentrerede resultater",
+          "org": "North York General Hospital & University of Toronto",
+          "city": "Toronto",
+          "country": "Canada",
+          "interests": "Overlever- og familieoplevelser; kvalitative og mixed-methods-tilgange"
+        },
+        "freddy-lippert-md": {
+          "role": "Leder af akutmedicinsk tjeneste; tidligere CEO for EMS København",
+          "org": "Region Hovedstaden / Falck (tidligere)",
+          "city": "København",
+          "country": "Danmark",
+          "interests": "Systemer for hjertestopbehandling; vagtcentral; aktivering af vidner"
+        },
+        "koenraad-koen-monsieurs-md-phd": {
+          "role": "Akutmedicinsk afdelingsleder; professor",
+          "org": "Universitetshospitalet i Antwerpen (UZA) & Universitetet i Antwerpen",
+          "city": "Antwerpen (Edegem)",
+          "country": "Belgien",
+          "interests": "ERC-retningslinjer; avanceret genoplivning; luftveje; uddannelse"
+        },
+        "paul-swindell": {
+          "role": "Stifter/formand; fortaler for overlevere",
+          "org": "Sudden Cardiac Arrest UK",
+          "city": "Essex (ca.)",
+          "country": "Storbritannien",
+          "interests": "Peer-støtte; levet erfaring; offentlig involvering"
+        },
+        "dave-cleland": {
+          "role": "OHCA-overlever; historiefortæller",
+          "org": "Sudden Cardiac Arrest UK",
+          "city": "Essex (ca.)",
+          "country": "Storbritannien",
+          "interests": "Levet erfaring; overleverfortalervirksomhed"
+        },
+        "esther-kuku": {
+          "role": "Direktør for kommunikation og engagement",
+          "org": "Resuscitation Council UK",
+          "city": "London",
+          "country": "Storbritannien",
+          "interests": "Offentlig involvering; partnerskaber; kommunikation"
+        },
+        "victoria-wragg-rn": {
+          "role": "Klinisk leder",
+          "org": "Resuscitation Council UK",
+          "city": "London",
+          "country": "Storbritannien",
+          "interests": "Forløb for overlevere; kvalitetsstandarder; efterbehandling"
+        },
+        "lorenzo-gamberini-md": {
+          "role": "Anæstesi og intensiv; præhospital akut",
+          "org": "Ospedale Maggiore Carlo Alberto Pizzardi",
+          "city": "Bologna",
+          "country": "Italien",
+          "interests": "Hjertestop; præhospitale systemer; avanceret genoplivning"
+        },
+        "bo-gregers-winkel-md-dmsc": {
+          "role": "Overlæge i kardiologi; forskningschef",
+          "org": "Rigshospitalet / Københavns Universitet",
+          "city": "København",
+          "country": "Danmark",
+          "interests": "Pludselig hjertedød; resultater efter hjertestop"
+        },
+        "guglielmo-imbriaco": {
+          "role": "Medlem af videnskabelig komité",
+          "org": "Italiensk Genoplivningsråd (IRC)",
+          "city": "Bologna (området)",
+          "country": "Italien",
+          "interests": "Akutberedskab; uddannelse; genoplivningsvidenskab"
+        },
+        "katarina-heimburg": {
+          "role": "Fysioterapeut og forsker",
+          "org": "Lunds Universitet / Skåne Universitetssjukhus",
+          "city": "Lund",
+          "country": "Sverige",
+          "interests": "Rehabilitering efter OHCA; patientcentrerede resultater"
+        },
+        "nicole-marie-zerafa-likely": {
+          "role": "Instruktør; praktiserende læge under uddannelse; bidragyder til MRC",
+          "org": "Malta Resuscitation Council",
+          "city": "Msida (universitetsområdet)",
+          "country": "Malta",
+          "interests": "Genoplivningsundervisning; træning i lokalsamfundet"
+        },
+        "kirstie-l-haywood-phd": {
+          "role": "Professor i sundhedsresultater",
+          "org": "Warwick Medical School",
+          "city": "Coventry (Warwick-campus)",
+          "country": "Storbritannien",
+          "interests": "Patientrapporterede målinger; livskvalitet; overlevelsestjenester"
+        },
+        "annette-waldemar": {
+          "role": "Specialsygeplejerske og forsker",
+          "org": "Linköpings Universitet / Region Östergötland",
+          "city": "Linköping",
+          "country": "Sverige",
+          "interests": "Genoplivning med pårørende til stede; behov hos overlevere"
+        },
+        "mette-kirstine-wagner": {
+          "role": "Kardiologi; overlevelse og mental sundhed",
+          "org": "Rigshospitalet, Region Hovedstaden",
+          "city": "København",
+          "country": "Danmark",
+          "interests": "Tilbagevenden til arbejde; mental sundhed efter hjertestop"
+        },
+        "piritta-set-l": {
+          "role": "Vicecheflæge (EMS)",
+          "org": "Pirkanmaa velfærdstjenesters amt",
+          "city": "Tampere",
+          "country": "Finland",
+          "interests": "Lægebemandet ambulance; behandlingssystemer"
+        },
+        "marta-dembkowska-przyby-md": {
+          "role": "Anæstesi og intensiv; ERC-udvalg",
+          "org": "Jagiellonian University Medical College",
+          "city": "Kraków",
+          "country": "Polen",
+          "interests": "Anæstesi; undervisning i genoplivning"
+        },
+        "tomasz-lonc-md": {
+          "role": "Anæstesi og intensiv terapi",
+          "org": "Jagiellonian University Medical College",
+          "city": "Kraków",
+          "country": "Polen",
+          "interests": "Regional anæstesi; resultater i intensiv terapi"
+        },
+        "vicky-v-l-joshi-phd": {
+          "role": "Lektor i fysioterapi",
+          "org": "Glasgow Caledonian University",
+          "city": "Glasgow",
+          "country": "Storbritannien",
+          "interests": "OHCA-overlevelse; rehabilitering"
+        },
+        "cyprus-resuscitation-council-kysan": {
+          "role": "Nationalt genoplivningsråd (organisation)",
+          "org": "KYSAN",
+          "city": "Nicosia",
+          "country": "Cypern",
+          "interests": "Træning, implementering af retningslinjer, offentlig involvering på Cypern"
+        },
+        "marco-mion-cpsychol": {
+          "role": "Klinisk psykolog og forsker",
+          "org": "Mid and South Essex NHS FT — Essex Cardiothoracic Centre",
+          "city": "Basildon",
+          "country": "Storbritannien",
+          "interests": "OHCA-overlevelse; neurorehabilitering; feedbacksystemer; digital støtte (V-CARE)"
+        },
+        "alexander-presciutti": {
+          "role": "Forsker (genoplivning/adfærdsvidenskab)",
+          "org": "Harvard Medical School",
+          "city": "Boston",
+          "country": "USA",
+          "interests": "Genoplivningsvidenskab; adfærds- og outcome-forskning (afventer bekræftelse)"
+        },
+        "marine-paul": {
+          "role": "Intensivlæge; medstifter af foreningen La vie après un arrêt cardiaque",
+          "org": "Centre Hospitalier de Versailles",
+          "city": "Le Chesnay",
+          "country": "Frankrig",
+          "interests": "Intensiv behandling efter hjertestop; støtte til overlevere og pårørende; lokalt engagement"
+        }
+      }
+    },
+    "mt": {
+      "people": {
+        "stefan-jutterdal": {
+          "role": "Fiżjoterapista; avukat għall-pazjenti/superstiti",
+          "org": "Żvezja (reġjun Kalmar)",
+          "city": "Kalmar",
+          "country": "Żvezja",
+          "interests": "Rijabilitazzjoni ċċentrata fuq il-persuna; avukatura għall-pazjenti wara arrest kardijaku"
+        },
+        "johan-israelsson-rn-phd": {
+          "role": "Infermier tal-ITU u riċerkatur",
+          "org": "Kalmar County Hospital / Linnaeus University",
+          "city": "Kalmar",
+          "country": "Żvezja",
+          "interests": "Segwitu wara OHCA; kwalità tal-ħajja; riżultati psikoloġiċi"
+        },
+        "aymeric-lejeune": {
+          "role": "Mexxej tan-netwerk/programm",
+          "org": "European Resuscitation Council (ERC)",
+          "city": "Antwerp",
+          "country": "Belġju",
+          "interests": "Netwerks ta’ taħriġ; korsijiet; operazzjonijiet tal-ERC"
+        },
+        "federico-semeraro-md": {
+          "role": "President; anesteżija u kura intensiva / emerġenza pre-ospitali",
+          "org": "European Resuscitation Council; Ospedale Maggiore Bologna",
+          "city": "Bologna",
+          "country": "Italja",
+          "interests": "Edukazzjoni dwar ir-resusċitazzjoni; linji gwida; CPR minn xhieda"
+        },
+        "katie-dainty-phd": {
+          "role": "Chair tar-riċerka dwar riżultati ċċentrati fuq il-pazjent",
+          "org": "North York General Hospital & University of Toronto",
+          "city": "Toronto",
+          "country": "Kanada",
+          "interests": "Esperjenza tas-superstiti u tal-familji; metodi kwalitattivi u mħallta"
+        },
+        "freddy-lippert-md": {
+          "role": "Mexxej tas-servizz mediku ta’ emerġenza; eks-CEO ta’ EMS Copenhagen",
+          "org": "Reġjun Kapitali tad-Danimarka / Falck (qabel)",
+          "city": "Kopenħagen",
+          "country": "Danimarka",
+          "interests": "Sistemi ta’ kura wara arrest kardijaku; dispatch; attivazzjoni ta’ xhieda"
+        },
+        "koenraad-koen-monsieurs-md-phd": {
+          "role": "Kap tal-mediċina tal-emerġenza; professur",
+          "org": "Antwerp University Hospital (UZA) & University of Antwerp",
+          "city": "Antwerp (Edegem)",
+          "country": "Belġju",
+          "interests": "Linji gwida tal-ERC; ALS; pajpijiet tan-nifs; taħriġ"
+        },
+        "paul-swindell": {
+          "role": "Fundatur/ċermen; avukat għas-superstiti",
+          "org": "Sudden Cardiac Arrest UK",
+          "city": "Essex (madwar)",
+          "country": "Renju Unit",
+          "interests": "Appoġġ bejn il-pari; esperjenza tal-ħajja; involviment pubbliku"
+        },
+        "dave-cleland": {
+          "role": "Superstiti ta’ OHCA; rakkontatur",
+          "org": "Sudden Cardiac Arrest UK",
+          "city": "Essex (madwar)",
+          "country": "Renju Unit",
+          "interests": "Esperjenza tal-ħajja; avukatura għas-superstiti"
+        },
+        "esther-kuku": {
+          "role": "Direttriċi tal-komunikazzjoni u l-impenn",
+          "org": "Resuscitation Council UK",
+          "city": "Londra",
+          "country": "Renju Unit",
+          "interests": "Involviment pubbliku; sħubiji; komunikazzjoni"
+        },
+        "victoria-wragg-rn": {
+          "role": "Mexxejja klinika",
+          "org": "Resuscitation Council UK",
+          "city": "Londra",
+          "country": "Renju Unit",
+          "interests": "Rotot għas-superstiti; standards ta’ kwalità; kura ta’ wara"
+        },
+        "lorenzo-gamberini-md": {
+          "role": "Anesteżija u kura intensiva; emerġenza pre-ospitali",
+          "org": "Ospedale Maggiore Carlo Alberto Pizzardi",
+          "city": "Bologna",
+          "country": "Italja",
+          "interests": "Arrest kardijaku; sistemi pre-ospitali; appoġġ avvanzat għall-ħajja"
+        },
+        "bo-gregers-winkel-md-dmsc": {
+          "role": "Konsulent kardjologu; direttur tar-riċerka",
+          "org": "Rigshospitalet / University of Copenhagen",
+          "city": "Kopenħagen",
+          "country": "Danimarka",
+          "interests": "Mewt kardijaka f’daqqa; riżultati wara arrest kardijaku"
+        },
+        "guglielmo-imbriaco": {
+          "role": "Membru tal-kumitat xjentifiku",
+          "org": "Italian Resuscitation Council (IRC)",
+          "city": "Bologna (żona)",
+          "country": "Italja",
+          "interests": "EMS; taħriġ; xjenza tar-resusċitazzjoni"
+        },
+        "katarina-heimburg": {
+          "role": "Fiżjoterapista u riċerkatriċi",
+          "org": "Lund University / Skåne University Hospital",
+          "city": "Lund",
+          "country": "Żvezja",
+          "interests": "Rijabilitazzjoni wara OHCA; riżultati ċċentrati fuq il-pazjent"
+        },
+        "nicole-marie-zerafa-likely": {
+          "role": "Istrutturi; GP fil-formazzjoni; kontributur tal-MRC",
+          "org": "Malta Resuscitation Council",
+          "city": "Msida (żona universitarja)",
+          "country": "Malta",
+          "interests": "Edukazzjoni dwar ir-resusċitazzjoni; taħriġ fil-komunità"
+        },
+        "kirstie-l-haywood-phd": {
+          "role": "Professur tar-riżultati tas-saħħa",
+          "org": "Warwick Medical School",
+          "city": "Coventry (kampus Warwick)",
+          "country": "Renju Unit",
+          "interests": "Miżuri rrappurtati mill-pazjenti; kwalità tal-ħajja; servizzi ta’ superstiti"
+        },
+        "annette-waldemar": {
+          "role": "Infermier speċjalizzat u riċerkatriċi",
+          "org": "Linköping University / Region Östergötland",
+          "city": "Linköping",
+          "country": "Żvezja",
+          "interests": "Resusċitazzjoni fil-preżenza tal-familja; bisogni tas-superstiti"
+        },
+        "mette-kirstine-wagner": {
+          "role": "Kardjoloġija; superstiti u saħħa mentali",
+          "org": "Rigshospitalet, Reġjun Kapitali tad-Danimarka",
+          "city": "Kopenħagen",
+          "country": "Danimarka",
+          "interests": "Ritorn għax-xogħol; saħħa mentali wara arrest kardijaku"
+        },
+        "piritta-set-l": {
+          "role": "Tabiba viċi kap (EMS)",
+          "org": "Pirkanmaa Wellbeing Services County",
+          "city": "Tampere",
+          "country": "Finlandja",
+          "interests": "EMS b’tobba abbord; sistemi ta’ kura"
+        },
+        "marta-dembkowska-przyby-md": {
+          "role": "Anestesjoloġija u kura intensiva; kumitati tal-ERC",
+          "org": "Jagiellonian University Medical College",
+          "city": "Kraków",
+          "country": "Polonja",
+          "interests": "Anestesija; taħriġ fir-resusċitazzjoni"
+        },
+        "tomasz-lonc-md": {
+          "role": "Anestesjoloġija u terapija intensiva",
+          "org": "Jagiellonian University Medical College",
+          "city": "Kraków",
+          "country": "Polonja",
+          "interests": "Anestesija reġjonali; riżultati fil-kura intensiva"
+        },
+        "vicky-v-l-joshi-phd": {
+          "role": "Lettura fil-fiżjoterapija",
+          "org": "Glasgow Caledonian University",
+          "city": "Glasgow",
+          "country": "Renju Unit",
+          "interests": "Superstiti ta’ OHCA; rijabilitazzjoni"
+        },
+        "cyprus-resuscitation-council-kysan": {
+          "role": "Kunsill nazzjonali tar-resusċitazzjoni (organizzazzjoni)",
+          "org": "KYSAN",
+          "city": "Nicosia",
+          "country": "Ċipru",
+          "interests": "Taħriġ, implimentazzjoni tal-linji gwida, involviment pubbliku f’Ċipru"
+        },
+        "marco-mion-cpsychol": {
+          "role": "Psikologu kliniku u riċerkatur",
+          "org": "Mid and South Essex NHS FT — Essex Cardiothoracic Centre",
+          "city": "Basildon",
+          "country": "Renju Unit",
+          "interests": "Superstiti ta’ OHCA; newroriabilitazzjoni; sistemi ta’ feedback; appoġġ diġitali (V-CARE)"
+        },
+        "alexander-presciutti": {
+          "role": "Riċerkatur (xjenza tar-resusċitazzjoni/imġiba)",
+          "org": "Harvard Medical School",
+          "city": "Boston",
+          "country": "Stati Uniti",
+          "interests": "Xjenza tar-resusċitazzjoni; riċerka dwar l-imġiba u r-riżultati (għadu biex jiġi kkonfermat)"
+        },
+        "marine-paul": {
+          "role": "Tabiba tal-kura intensiva; ko-fundatriċi tal-assoċjazzjoni La vie après un arrêt cardiaque",
+          "org": "Centre Hospitalier de Versailles",
+          "city": "Le Chesnay",
+          "country": "Franza",
+          "interests": "Kura intensiva wara arrest kardijaku; appoġġ lil superstiti u ko-superstiti; avukatura komunitarja"
+        }
+      }
     }
   }
 }
